@@ -1,0 +1,15 @@
+import os
+import zipfile
+
+def escanear_zip(path):
+    print(f"📂 Revisando: {path}\n")
+    for file in os.listdir(path):
+        if file.endswith(".zip"):
+            full_path = os.path.join(path, file)
+            try:
+                with zipfile.ZipFile(full_path, 'r') as z:
+                    print(f"🗂️ {file}: {len(z.namelist())} archivos internos")
+            except zipfile.BadZipFile:
+                print(f"⚠️ Error: ZIP corrupto → {file}")
+
+escanear_zip(".")  # Revisa el directorio actual
