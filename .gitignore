@@ -1,0 +1,60 @@
+# Archivos del sistema macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Archivos de backup y temporales
+*.tmp
+*.temp
+*.log
+*.bak
+backup_archives/
+
+# Archivos de Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Bases de datos temporales
+*.db-journal
+*.sqlite-temp
+
+# Archivos de entorno
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Archivos ZIP y comprimidos (excepto releases específicos)
+*.zip
+*.tar.gz
+*.rar
+
+# Archivos de VS Code (configuraciones locales)
+.vscode/settings.json
+.vscode/launch.json
+.vscode/extensions.json
+
+# Archivos de Node.js (si usas JavaScript)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Archivos de IDEs
+*.idea/
+*.swp
+*.swo
+*~

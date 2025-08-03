@@ -1,10 +1,26 @@
-# MENTALIA
 # 🌐 MENTALIA
+
+[![GitHub](https://img.shields.io/badge/GitHub-MENTALIA-blue?style=flat&logo=github)](https://github.com/cata7777/MENTALIA)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Version](https://img.shields.io/badge/Version-2.0-orange.svg)](VERSION)
 
 ## 🧠 **ESTRUCTURA MENTALIA – ARQUITECTURA MAESTRA vFinal**
 
 Bienvenida al ecosistema simbólico-funcional de **MENTALIA**:  
 Una red expandible de agentes inteligentes, equipos operativos, sistemas funcionales y plataformas multidimensionales, todo interconectado con propósito y escalabilidad.
+
+## 📁 Estructura del Proyecto
+
+```
+MENTALIA/
+├── 📊 data/           # Bases de datos y archivos de datos
+├── 📝 docs/           # Documentación del proyecto
+├── ⚙️ config/         # Archivos de configuración
+├── 💻 src/            # Código fuente principal
+├── 🔧 scripts/        # Scripts ejecutables
+├── 🏗️ MENTALIA_POSTULABLES_ENGINE/ # Motor principal
+└── 📦 backup_archives/ # Archivos de respaldo
+```
 
 ---
 
