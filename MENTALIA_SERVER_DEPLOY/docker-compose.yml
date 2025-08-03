@@ -1,0 +1,19 @@
+version: "3"
+services:
+  mentalia:
+    build: .
+    expose:
+      - "5000"
+    volumes:
+      - .:/opt/mentalia
+    restart: always
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - .:/opt/mentalia:ro
+    depends_on:
+      - mentalia
+    restart: always
