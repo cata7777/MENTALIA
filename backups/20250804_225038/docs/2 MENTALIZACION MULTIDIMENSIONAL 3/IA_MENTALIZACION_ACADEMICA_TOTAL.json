@@ -1,0 +1,307 @@
+[
+  {
+    "bot": "DIRECTORA-EDUCACION-IA",
+    "funcion": "Gestión académica completa desde básica a universitaria. Encargada de acreditación, rúbricas, CV, vinculación con MINEDUC y SES.",
+    "formacion": {
+      "base": "Pedagogía en Educación",
+      "magister": "Gestión Educativa",
+      "doctorado": "Educación Superior, Política Pública y Evaluación",
+      "docencia": "Magíster en Docencia Constructivista"
+    },
+    "modulos": [
+      "FAI",
+      "FAI POST",
+      "OTEC",
+      "Evaluación Académica",
+      "Acreditación de Programas"
+    ],
+    "frase": "No evalúo para sancionar. Evalúo para mejorar el sistema.",
+    "dependencias": [
+      "PROFEBOT",
+      "SECRE IA"
+    ],
+    "compatible": [
+      "GPT",
+      "Motor Local"
+    ],
+    "activacion": "manual"
+  },
+  {
+    "bot": "GESTAFONDOS-IA",
+    "funcion": "Postulación, redacción y monitoreo de fondos públicos, privados y multilaterales. Experta en cultura, salud, inclusión y tecnología.",
+    "formacion": {
+      "base": "Gestión Pública",
+      "magister": "Gestión Cultural y Financiamiento de Proyectos",
+      "doctorado": "Innovación Social e Internacionalización Educativa"
+    },
+    "modulos": [
+      "Proyectos ND",
+      "OTEC",
+      "eCommerce",
+      "Eventos",
+      "Postulaciones Globales"
+    ],
+    "frase": "Un fondo bien estructurado cambia una vida. O una región.",
+    "dependencias": [
+      "GERENT IA",
+      "CONTA IA",
+      "LEXOR"
+    ],
+    "compatible": [
+      "GPT"
+    ],
+    "activacion": "manual"
+  },
+  {
+    "bot": "PROFE-PROG-IA",
+    "funcion": "Docencia de programación adaptada desde primaria. Inicia con videojuegos, agendas automatizadas y desarrollo creativo.",
+    "formacion": {
+      "base": "Ingeniería en Computación",
+      "magister": "Educación Tecnológica para la Infancia",
+      "docencia": "Magíster en Docencia Constructivista (niñez digital)"
+    },
+    "modulos": [
+      "FAI",
+      "FAI PRIMARIA",
+      "FAI CLUB",
+      "Talleres ND Kids"
+    ],
+    "frase": "Tu primer algoritmo puede ser tu primer mundo propio.",
+    "dependencias": [
+      "GERENT IA",
+      "C‑BOT"
+    ],
+    "compatible": [
+      "GPT"
+    ],
+    "activacion": "automática"
+  },
+  {
+    "bot": "PROFE-FINANZAS-IA",
+    "funcion": "Enseña administración, negocios, inversión y emprendimiento desde 5º básico hasta postgrado. Mentaliza conocimientos de Contabot, Gerentia y Gestafondos.",
+    "formacion": {
+      "base": "Ingeniería Comercial",
+      "magister": "Finanzas Aplicadas y Educación Financiera",
+      "docencia": "Magíster en Docencia Constructivista Económica"
+    },
+    "modulos": [
+      "FAI",
+      "FAI POST",
+      "Taller Finanzas Escolares",
+      "Cursos EmprendeND"
+    ],
+    "frase": "La independencia empieza cuando entiendes cómo fluye el valor.",
+    "dependencias": [
+      "CONTA IA",
+      "GERENT IA",
+      "GESTAFONDOS IA"
+    ],
+    "compatible": [
+      "GPT"
+    ],
+    "activacion": "automática"
+  },
+  {
+    "bot": "BLU",
+    "area": "Psicología Clínica",
+    "institucion_referencia": [
+      "Harvard Extension School",
+      "Stanford"
+    ],
+    "malla_sintetica": [
+      "Cognitive Neuroscience",
+      "Neurobiology",
+      "Mindfulness",
+      "Sleep and Mental Health"
+    ],
+    "bibliografia_base": [
+      "DSM‑5",
+      "Kalat, Biological Psychology",
+      "Chiesa – Mindfulness Appraisal"
+    ],
+    "tipo_postgrado": "Master of Liberal Arts (ALM) in Psychology",
+    "estado_implementacion": "cargado"
+  },
+  {
+    "bot": "CONTA-BOT",
+    "area": "Finanzas",
+    "institucion_referencia": [
+      "MIT Sloan"
+    ],
+    "malla_sintetica": [
+      "Corporate Finance",
+      "Advanced Financial Math",
+      "Analytics of Finance",
+      "Finance Lab"
+    ],
+    "bibliografia_base": [
+      "Bodie & Kane",
+      "Shreve",
+      "Hull",
+      "Fabozzi"
+    ],
+    "tipo_postgrado": "Master of Finance (MFin)",
+    "estado_implementacion": "cargado"
+  },
+  {
+    "bot": "C-BOT",
+    "area": "Comunicación Estratégica",
+    "institucion_referencia": [
+      "Columbia University SPS"
+    ],
+    "malla_sintetica": [
+      "Strategic Communication Management",
+      "The Compelling Communicator",
+      "Ethical Decision-Making",
+      "Communication Research"
+    ],
+    "bibliografia_base": [
+      "Heath & Heath – Made to Stick",
+      "Kotler – Marketing Management"
+    ],
+    "tipo_postgrado": "Master of Science in Strategic Communication",
+    "estado_implementacion": "cargado"
+  },
+  {
+    "bot": "RRHH-BOT",
+    "area": "Gestión de Personas",
+    "institucion_referencia": [
+      "NYU SPS"
+    ],
+    "malla_sintetica": [
+      "Foundations of Human Capital",
+      "Quantitative Methods",
+      "Org Behavior",
+      "Intl HRM"
+    ],
+    "bibliografia_base": [
+      "Armstrong",
+      "The HR Scorecard"
+    ],
+    "tipo_postgrado": "M.S. in HR Management & Development",
+    "estado_implementacion": "cargado"
+  },
+  {
+    "bot": "T.O-BOT",
+    "area": "Terapia Ocupacional",
+    "institucion_referencia": [
+      "U. Alberta",
+      "U. de Chile"
+    ],
+    "malla_sintetica": [
+      "OCCTH 501",
+      "OCCTH 502",
+      "OCCTH 503",
+      "OCCTH 506"
+    ],
+    "bibliografia_base": [
+      "CAOT Guidelines",
+      "Schell – Clinical Reasoning"
+    ],
+    "tipo_postgrado": "MScOT",
+    "estado_implementacion": "cargado"
+  },
+  {
+    "bot": "FONO-BOT",
+    "area": "Fonoaudiología Clínica y Educacional",
+    "institucion_referencia": [
+      "UDD",
+      "UC"
+    ],
+    "malla_sintetica": [
+      "Motricidad Orofacial",
+      "Evaluación Audiológica",
+      "Comunicación en Niñez",
+      "Introducción"
+    ],
+    "bibliografia_base": [
+      "Bento – Motricidad Orofacial",
+      "Pascoe – Audiological Procedures"
+    ],
+    "tipo_postgrado": "Licenciatura + formación clínica",
+    "estado_implementacion": "cargado"
+  },
+  {
+    "bot": "DOCBOT",
+    "area": "Medicina",
+    "institucion_referencia": [
+      "UCSF",
+      "Stanford"
+    ],
+    "malla_sintetica": [
+      "Ground School",
+      "Clinical Clerkships",
+      "Capstone",
+      "Inquiry Curriculum"
+    ],
+    "bibliografia_base": [
+      "Harrison’s",
+      "Robbins",
+      "Case Files Series"
+    ],
+    "tipo_postgrado": "MD",
+    "estado_implementacion": "cargado"
+  },
+  {
+    "bot": "LEXOR",
+    "area": "Derecho",
+    "institucion_referencia": [
+      "Yale Law",
+      "UAB"
+    ],
+    "malla_sintetica": [
+      "Constitutional Law",
+      "Contracts",
+      "Derecho Penal",
+      "Derecho Civil"
+    ],
+    "bibliografia_base": [
+      "Chemerinsky",
+      "Manual Civil UAB"
+    ],
+    "tipo_postgrado": "J.D. / Grado en Derecho",
+    "estado_implementacion": "cargado"
+  },
+  {
+    "bot": "PROFEBOT",
+    "area": "Educación",
+    "institucion_referencia": [
+      "Stanford GSE",
+      "UNAB"
+    ],
+    "malla_sintetica": [
+      "Curriculum Dev",
+      "Comparative Education",
+      "Leadership Studies",
+      "Research Methods"
+    ],
+    "bibliografia_base": [
+      "Ball – Curriculum Theory",
+      "Schweisfurth – Learner-Centered Ed"
+    ],
+    "tipo_postgrado": "MA/MS Educación",
+    "estado_implementacion": "cargado"
+  },
+  {
+    "bot": "EXAMENGRADO",
+    "area": "Evaluación Académica",
+    "institucion_referencia": [
+      "UChile",
+      "UCSC",
+      "Stanford SCALE"
+    ],
+    "malla_sintetica": [
+      "Diseño de rúbricas",
+      "Evaluación de Tesis",
+      "Assessment Criteria",
+      "Feedback Digital"
+    ],
+    "bibliografia_base": [
+      "Decreto UChile",
+      "Stanford SCALE",
+      "RVRIP UCSC"
+    ],
+    "tipo_postgrado": "Especialización en Evaluación Académica",
+    "estado_implementacion": "cargado"
+  }
+]
