@@ -1,4 +1,5 @@
 # 🌌 **MULTIVERSO MENTALIA 2025**
+
 ## **Mental-IA: Ecosistema Integral de Neurodivergencia e Inteligencia Artificial**
 
 ---
