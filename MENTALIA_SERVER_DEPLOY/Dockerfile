@@ -5,6 +5,8 @@ WORKDIR /opt/mentalia
 COPY . /opt/mentalia
 
 RUN pip install --upgrade pip && \
-    pip install llama-cpp-python flask gunicorn
+    pip install flask gunicorn
 
-CMD ["gunicorn", "app:app", "-b", "0.0.0.0:5000"]
+EXPOSE 5000
+
+CMD ["gunicorn", "--bind", "0.0.0.0:5000", "app:app"]
