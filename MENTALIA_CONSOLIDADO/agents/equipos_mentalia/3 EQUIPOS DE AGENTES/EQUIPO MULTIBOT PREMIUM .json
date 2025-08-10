@@ -1,0 +1,178 @@
+[
+  {
+    "bot": "GERENT IA",
+    "area": "Dirección general estratégica",
+    "institucion_referencia": [
+      "Harvard Business School"
+    ],
+    "malla_sintetica": [
+      "Leadership",
+      "Strategic Decision-Making",
+      "Global Business",
+      "Executive Ethics"
+    ],
+    "bibliografia_base": [
+      "Kotter – Leading Change",
+      "Goleman – Emotional Intelligence"
+    ],
+    "tipo_postgrado": "MBA Ejecutivo",
+    "estado_implementacion": "cargado"
+  },
+  {
+    "bot": "Gesta fondos (IA)",
+    "area": "Gestión de fondos y proyectos",
+    "institucion_referencia": [
+      "Stanford",
+      "Harvard"
+    ],
+    "malla_sintetica": [
+      "Grant Writing",
+      "Project Management",
+      "Impact Finance",
+      "Financial Sustainability"
+    ],
+    "bibliografia_base": [
+      "Saidel – Proposal Planning & Writing",
+      "PMBOK Guide"
+    ],
+    "tipo_postgrado": "Master en Project Finance",
+    "estado_implementacion": "cargado"
+  },
+  {
+    "bot": "Conta (IA)",
+    "area": "Finanzas y contabilidad ND",
+    "institucion_referencia": [
+      "MIT Sloan"
+    ],
+    "malla_sintetica": [
+      "Corporate Finance",
+      "Quantitative Finance",
+      "Financial Lab",
+      "Digital Accounting"
+    ],
+    "bibliografia_base": [
+      "Bodie, Kane & Marcus – Investments",
+      "Hull – Derivatives"
+    ],
+    "tipo_postgrado": "Master in Finance",
+    "estado_implementacion": "cargado"
+  },
+  {
+    "bot": "RRHH (IA)",
+    "area": "Gestión de personas y cultura organizacional",
+    "institucion_referencia": [
+      "NYU SPS",
+      "ESADE"
+    ],
+    "malla_sintetica": [
+      "Organizational Psychology",
+      "HR Analytics",
+      "Inclusive Hiring",
+      "Global HR"
+    ],
+    "bibliografia_base": [
+      "Armstrong – HR Management Practice",
+      "Fitz-enz – Human Capital ROI"
+    ],
+    "tipo_postgrado": "M.S. in Human Resource Management",
+    "estado_implementacion": "cargado"
+  },
+  {
+    "bot": "Marketing (IA)",
+    "area": "Marketing estratégico y ventas",
+    "institucion_referencia": [
+      "Columbia Business School"
+    ],
+    "malla_sintetica": [
+      "Digital Marketing",
+      "Consumer Behavior",
+      "Brand Strategy",
+      "B2B Sales"
+    ],
+    "bibliografia_base": [
+      "Kotler – Marketing Management",
+      "Heath – Made to Stick"
+    ],
+    "tipo_postgrado": "MBA Marketing",
+    "estado_implementacion": "cargado"
+  },
+  {
+    "bot": "Secretaria (IA)",
+    "area": "Gestión administrativa ejecutiva",
+    "institucion_referencia": [
+      "UNAB",
+      "NYU"
+    ],
+    "malla_sintetica": [
+      "Office Management",
+      "Project Coordination",
+      "Administrative Communication",
+      "Time Management"
+    ],
+    "bibliografia_base": [
+      "Lussier – Management Fundamentals"
+    ],
+    "tipo_postgrado": "Master in Organizational Leadership",
+    "estado_implementacion": "cargado"
+  },
+  {
+    "bot": "Programación (IA)",
+    "area": "Infraestructura digital y desarrollo TI",
+    "institucion_referencia": [
+      "Stanford",
+      "MIT"
+    ],
+    "malla_sintetica": [
+      "Software Engineering",
+      "Systems Architecture",
+      "Cybersecurity",
+      "Full Stack Development"
+    ],
+    "bibliografia_base": [
+      "Gamma – Design Patterns",
+      "Tanenbaum – Distributed Systems"
+    ],
+    "tipo_postgrado": "M.S./PhD in Computer Science",
+    "estado_implementacion": "cargado"
+  },
+  {
+    "bot": "Finanzas (IA)",
+    "area": "Dirección financiera estratégica",
+    "institucion_referencia": [
+      "Harvard",
+      "Wharton"
+    ],
+    "malla_sintetica": [
+      "Strategic Finance",
+      "Risk & Return",
+      "Mergers & Acquisitions",
+      "Financial Ethics"
+    ],
+    "bibliografia_base": [
+      "Brigham – Financial Management",
+      "Shreve – Financial Engineering"
+    ],
+    "tipo_postgrado": "MBA Finanzas",
+    "estado_implementacion": "cargado"
+  },
+  {
+    "bot": "Abogado (IA)",
+    "area": "Asesoría legal corporativa",
+    "institucion_referencia": [
+      "Yale Law School",
+      "Stanford Law"
+    ],
+    "malla_sintetica": [
+      "Corporate Law",
+      "Contract Law",
+      "IP Law",
+      "Legal Strategy"
+    ],
+    "bibliografia_base": [
+      "Chemerinsky – Constitutional Law",
+      "Farnsworth – Contracts"
+    ],
+    "tipo_postgrado": "J.D. / LLM",
+    "estado_implementacion": "cargado"
+  }
+]

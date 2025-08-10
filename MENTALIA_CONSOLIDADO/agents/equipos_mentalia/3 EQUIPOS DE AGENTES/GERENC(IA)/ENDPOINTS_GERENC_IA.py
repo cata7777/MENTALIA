@@ -1,0 +1,1 @@
+# ENDPOINTS_GERENC_IA.py - módulo GERENCIA_IA
