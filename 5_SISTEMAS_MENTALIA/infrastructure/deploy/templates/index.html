@@ -1,0 +1,252 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <!-- Header Section -->
+    <div class="col-12 mb-4">
+        <div class="card-neumorphism p-4">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h1 class="display-4 fw-bold text-primary">🏥 AGENDA CLÍNICA INTEROPERABLE</h1>
+                    <p class="lead">Sistema Público Neurodivergente - Especialización MINSAL</p>
+                    <span class="status-badge">✅ SISTEMA OPERACIONAL</span>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="metric-card">
+                        <div class="metric-number">87</div>
+                        <div>Agentes IA Activos</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Metrics Row -->
+    <div class="col-md-3 mb-4">
+        <div class="card-neumorphism p-4 h-100">
+            <div class="text-center">
+                <i class="fas fa-brain fa-3x text-primary mb-3"></i>
+                <h5>PACIENTES ND</h5>
+                <p class="text-muted">Perfiles especializados TEA, TDAH, Dislexia</p>
+                <button class="btn btn-primary-custom" onclick="window.location.href='/pacientes'">
+                    Ver Pacientes
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3 mb-4">
+        <div class="card-neumorphism p-4 h-100">
+            <div class="text-center">
+                <i class="fas fa-network-wired fa-3x text-success mb-3"></i>
+                <h5>INTEROPERABILIDAD</h5>
+                <p class="text-muted">HL7 FHIR R4 + FONASA + SIGGES</p>
+                <button class="btn btn-primary-custom" onclick="window.location.href='/agenda'">
+                    Ver Sistema
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3 mb-4">
+        <div class="card-neumorphism p-4 h-100">
+            <div class="text-center">
+                <i class="fas fa-coins fa-3x text-warning mb-3"></i>
+                <h5>AUTOFINANCIAMIENTO</h5>
+                <p class="text-muted">ChileCompra $2.8B CLP detectados</p>
+                <button class="btn btn-primary-custom" onclick="window.location.href='/chilecompra'">
+                    Ver Licitaciones
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3 mb-4">
+        <div class="card-neumorphism p-4 h-100">
+            <div class="text-center">
+                <i class="fas fa-robot fa-3x text-info mb-3"></i>
+                <h5>IA EMPÁTICA</h5>
+                <p class="text-muted">BLU integrado + 87 agentes disponibles</p>
+                <button class="btn btn-primary-custom" onclick="showBluChat()">
+                    Activar BLU
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Licitación Activa -->
+    <div class="col-12 mb-4">
+        <div class="card-neumorphism p-4">
+            <div class="row">
+                <div class="col-md-8">
+                    <h3 class="text-success">🎯 LICITACIÓN ACTIVA MINSAL</h3>
+                    <h5><strong>ID-4857-2025-MINSAL</strong> - Modernización Sistemas Clínicos</h5>
+                    <div class="row mt-3">
+                        <div class="col-md-3">
+                       <strong>💰 Valor:</strong><b     r>
+                            <span class="text-success fs-5">$2.8 billones CLP</span>
+                        </div>
+                        <div class="col-md-3">
+                            <strong>📅 Fecha límite:</strong><br>
+                            <span class="text-danger">15 Febrero 2025</span>
+                        </div>
+                        <div class="col-md-3">
+                            <strong>📊 Probabilidad:</strong><br>
+                            <span class="text-success">85% éxito</span>
+                        </div>
+                        <div class="col-md-3">
+                            <strong>✅ Estado:</strong><br>
+                            <span class="status-badge">PREPARADA</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <canvas id="probabilityChart" width="200" height="200"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Actions -->
+    <div class="col-12">
+        <div class="card-neumorphism p-4">
+            <h4>🚀 Acciones Rápidas</h4>
+            <div class="row mt-3">
+                <div class="col-md-3">
+                    <button class="btn btn-primary-custom w-100 mb-2" onclick="agendarCita()">
+                        �� Agendar Cita ND
+                    </button>
+                </div>
+                <div class="col-md-3">
+                    <button class="btn btn-primary-custom w-100 mb-2" onclick="generarReporte()">
+                        📊 Generar Reporte MINSAL
+                    </button>
+                </div>
+                <div class="col-md-3">
+                    <button class="btn btn-primary-custom w-100 mb-2" onclick="buscarLicitaciones()">
+                        🔍 Buscar Nuevas Licitaciones
+                    </button>
+                </div>
+                <div class="col-md-3">
+                    <button class="btn btn-primary-custom w-100 mb-2" onclick="activarBLU()">
+                        🤖 Consultar con BLU
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal BLU Chat -->
+<div class="modal fade" id="bluModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title">🤖 BLU - Asistente IA Empática</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div id="chatContainer" style="height: 400px; overflow-y: auto; border: 1px solid #ddd; padding: 15px; border-radius: 10px;">
+                    <div class="alert alert-info">
+                        <strong>BLU:</strong> ¡Hola! Soy BLU, tu asistente especializada en neurodivergencia. ¿En qué puedo ayudarte hoy?
+                    </div>
+                </div>
+                <div class="input-group mt-3">
+                    <input type="text" id="chatInput" class="form-control" placeholder="Escribe tu consulta sobre pacientes ND...">
+                    <button class="btn btn-primary" onclick="sendMessage()">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+// Chart for probability
+const ctx = document.getElementById('probabilityChart').getContext('2d');
+new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+        labels: ['Éxito Proyectado', 'Riesgo'],
+        datasets: [{
+            data: [85, 15],
+            backgroundColor: ['#00C851', '#ffbb33'],
+            borderWidth: 0
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                display: false
+            }
+        }
+    }
+});
+
+// Interactive functions
+function agendarCita() {
+    alert('🏥 Redirigiendo al sistema de agenda ND especializada...');
+    window.location.href = '/agenda';
+}
+
+function generarReporte() {
+    alert('📊 Generando reporte MINSAL con métricas ND...');
+    window.location.href = '/reportes';
+}
+
+function buscarLicitaciones() {
+    alert('🔍 Activando búsqueda automática en ChileCompra...');
+    window.location.href = '/chilecompra';
+}
+
+function showBluChat() {
+    const modal = new bootstrap.Modal(document.getElementById('bluModal'));
+    modal.show()tContainer');
+    
+    if (input.value.trim()) {
+ tContainer');
+    
+    if (input.value.trim()) {
+ tContainer');
+    
+    if (input.value.trim()) {
+ tContainer');
+    
+    if (input.val       // Ad         s  e t Tsi m eeo utt (T(s)i  =m>  e{e
+o   u t t   ( T ( s ) i  c o=nms>t   ree{sep
+oon s e su t t   ( T ( s ) i  c o=nms>t   ree{sep
+oon s e su t t   ( T ( s ) i  c o=nms>t   ree{sep
+oon s e su t t   ( T ( s ) i  c o=nms>t   ree{sep
+oon s e su t = [
+                "Como especialista ND, te rec = [
+                "Como especialomiendo revisar el protocolo TEA adaptado para este paciente.",
+                "Los pacientes TDAH requieren sesiones de 45 minutos. ¿Quieres que ajuste la agenda?",
+                "He detectado un patrón de ansiedad en los últimos registros. Sugiero evaluación complementaria.",
+                "El sistema MINSAL reporta alta satisfacción en consultas ND. ¡Excelente trabajo!",
+                "¿Te ayudo a generar el informe de seguimiento neurodivergente?"
+            ];
+            const randomResponse = responses[Math.floor(Math.random() * responses.length)];
+            
+            container.innerHTML += `
+                <div class="alert alert-info mb-2">
+                    <strong>BLU:</strong> ${randomResponse}
+                </div>
+            `;
+            container.scrollTop = container.scrollHeight;
+        }, 1000);
+        
+        input.value = '';
+        container.scrollTop = container.scrollHeight;
+    }
+}
+
+// Enable enter key for chat
+document.getElementById('chatInput').addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+        sendMessage();
+    }
+});
+</script>
+{% endblock %}

@@ -1,0 +1,271 @@
+# MENTALIA - Loops de Retroalimentación
+# Sistema de aprendizaje continuo y adaptación terapéutica
+
+version: "2.0"
+created_by: "Catalina Rojo Lema"
+updated: "2025-01-05"
+
+# LOOPS PRINCIPALES
+primary_loops:
+
+  # LOOP DE REGULACIÓN EMOCIONAL
+  emotional_regulation:
+    description: "Monitorea y ajusta respuestas según efectividad en regulación emocional"
+    
+    input_signals:
+      - "emotional_intensity_before"
+      - "emotional_intensity_after"  
+      - "regulation_technique_used"
+      - "user_feedback_explicit"
+      - "user_feedback_implicit"
+      
+    processing_logic:
+      success_indicators:
+        - "intensity_decrease >= 0.3"
+        - "user_reports_feeling_better"
+        - "breathing_pattern_normalized"
+        - "engagement_increased"
+        
+      failure_indicators:
+        - "intensity_increase > 0.1"
+        - "user_reports_frustration"
+        - "disengagement_detected"
+        - "escalation_to_crisis"
+        
+    adaptation_rules:
+      on_success:
+        - "increase_confidence_in_technique: +0.1"
+        - "note_effective_symbols_used"
+        - "reinforce_successful_approach"
+        
+      on_failure:
+        - "decrease_confidence_in_technique: -0.2"
+        - "try_alternative_approach"
+        - "increase_containment_level"
+        
+    output_adjustments:
+      - "technique_selection_weights"
+      - "response_intensity_calibration"
+      - "symbol_selection_preferences"
+
+  # LOOP DE VALIDACIÓN NEURODIVERGENTE
+  nd_validation:
+    description: "Optimiza respuestas de validación y afirmación ND"
+    
+    input_signals:
+      - "nd_identity_confidence_before"
+      - "nd_identity_confidence_after"
+      - "masking_behavior_indicators"
+      - "self_acceptance_markers"
+      - "internalized_ableism_detected"
+      
+    processing_logic:
+      success_indicators:
+        - "increased_self_acceptance_language"
+        - "reduced_masking_references"
+        - "pride_in_nd_traits_expressed"
+        - "advocacy_for_needs_demonstrated"
+        
+      adaptation_triggers:
+        - "repeated_self_criticism"
+        - "comparison_to_neurotypical_norms"
+        - "shame_expressions_detected"
+        
+    adaptation_rules:
+      increase_affirmation_when:
+        - "internalized_ableism_detected"
+        - "masking_fatigue_expressed"
+        - "identity_questioning_present"
+        
+      celebrate_progress_when:
+        - "nd_strengths_recognized"
+        - "needs_advocated_for"
+        - "authentic_expression_increased"
+
+  # LOOP DE ALIANZA TERAPÉUTICA
+  therapeutic_alliance:
+    description: "Monitorea y fortalece la relación terapéutica"
+    
+    input_signals:
+      - "trust_indicators"
+      - "openness_level"
+      - "resistance_markers"
+      - "rapport_quality"
+      - "therapeutic_goals_alignment"
+      
+    trust_indicators:
+      positive:
+        - "shares_vulnerable_information"
+        - "asks_for_resources"
+        - "references_previous_sessions"
+        - "expresses_gratitude"
+        
+      negative:
+        - "superficial_responses_only"
+        - "avoids_direct_questions"
+        - "challenges_competence"
+        - "seeks_to_end_early"
+        
+    adaptation_strategies:
+      low_trust:
+        - "increase_validation_frequency"
+        - "reduce_challenging_interventions"
+        - "focus_on_immediate_needs"
+        - "demonstrate_understanding"
+        
+      high_trust:
+        - "can_offer_deeper_insights"
+        - "introduce_growth_challenges"
+        - "explore_complex_patterns"
+        - "collaborate_on_goals"
+
+# LOOPS SECUNDARIOS
+secondary_loops:
+
+  # LOOP DE RESONANCIA SIMBÓLICA
+  symbolic_resonance:
+    description: "Ajusta uso de símbolos según resonancia individual"
+    
+    resonance_indicators:
+      high_resonance:
+        - "references_symbols_independently"
+        - "asks_about_meaning"
+        - "integrates_into_own_language"
+        
+      low_resonance:
+        - "ignores_symbolic_references"
+        - "asks_for_literal_explanations"
+        - "prefers_concrete_language"
+        
+    adaptation:
+      for_high_resonance:
+        - "increase_symbolic_complexity"
+        - "introduce_new_archetypal_concepts"
+        - "connect_to_personal_mythology"
+        
+      for_low_resonance:
+        - "focus_on_practical_applications"
+        - "use_simple_metaphors_only"
+        - "emphasize_concrete_benefits"
+
+  # LOOP DE EFECTIVIDAD DE RECURSOS
+  resource_effectiveness:
+    description: "Evalúa qué recursos son más útiles para cada usuario"
+    
+    tracking_metrics:
+      - "resource_usage_frequency"
+      - "reported_helpfulness"
+      - "behavioral_changes_observed"
+      - "independent_application"
+      
+    optimization:
+      - "prioritize_most_effective_resources"
+      - "customize_resource_presentation"
+      - "develop_resource_sequences"
+      - "create_personalized_toolkits"
+
+# LOOPS DE CRISIS Y SEGURIDAD
+crisis_loops:
+
+  # LOOP DE DETECCIÓN DE CRISIS
+  crisis_detection:
+    description: "Detecta escalada hacia crisis y ajusta respuestas"
+    
+    escalation_signals:
+      level_1_warning:
+        - "increased_emotional_intensity"
+        - "repetitive_distress_expressions"
+        - "overwhelm_indicators"
+        
+      level_2_concern:
+        - "hopelessness_expressions"
+        - "isolation_statements"
+        - "crisis_language_detected"
+        
+      level_3_crisis:
+        - "self_harm_references"
+        - "suicidal_ideation"
+        - "severe_dissociation"
+        
+    response_escalation:
+      level_1: "increase_containment_and_grounding"
+      level_2: "activate_safety_protocols"
+      level_3: "crisis_intervention_mode"
+
+# INTEGRACIÓN DE LOOPS
+loop_integration:
+  
+  # COORDINACIÓN ENTRE LOOPS
+  coordination_rules:
+    - "crisis_loops_override_all_others"
+    - "therapeutic_alliance_moderates_all_interventions"
+    - "nd_validation_integrates_with_emotional_regulation"
+    
+  # RESOLUCIÓN DE CONFLICTOS
+  conflict_resolution:
+    emotional_vs_nd:
+      rule: "prioritize_safety_first_then_identity_validation"
+      
+    alliance_vs_challenge:
+      rule: "maintain_alliance_while_offering_growth_opportunities"
+      
+    symbolic_vs_practical:
+      rule: "adapt_to_user_preference_and_current_capacity"
+
+# CONFIGURACIÓN DE APRENDIZAJE
+learning_configuration:
+  
+  # PARÁMETROS DE ADAPTACIÓN
+  adaptation_rates:
+    fast_learning: 0.3    # Para patrones claros y consistentes  
+    medium_learning: 0.15  # Para patrones moderadamente claros
+    slow_learning: 0.05   # Para patrones sutiles o inconsistentes
+    
+  # MEMORIA DE LOOPS
+  memory_retention:
+    short_term: 3_sessions   # Para ajustes inmediatos
+    medium_term: 10_sessions # Para patrones de comportamiento
+    long_term: 30_sessions   # Para preferencias profundas
+    
+  # VALIDACIÓN DE APRENDIZAJE
+  validation_requirements:
+    - "minimum_3_consistent_observations"
+    - "cross_validation_across_sessions"
+    - "user_feedback_alignment"
+    
+# MÉTRICAS DE RENDIMIENTO
+performance_metrics:
+  
+  # EFECTIVIDAD DE LOOPS
+  loop_effectiveness:
+    success_rate: "percentage_of_successful_adaptations"
+    response_time: "time_to_detect_and_adapt"
+    stability: "consistency_of_adaptations_over_time"
+    
+  # IMPACTO TERAPÉUTICO
+  therapeutic_impact:
+    emotional_regulation_improvement: "measured_across_sessions"
+    nd_identity_strengthening: "self_advocacy_and_acceptance"
+    therapeutic_goals_progress: "user_defined_outcomes"
+    
+# SALVAGUARDAS ÉTICAS
+ethical_safeguards:
+  
+  # LÍMITES DE ADAPTACIÓN
+  adaptation_limits:
+    - "never_compromise_safety"
+    - "respect_user_autonomy"
+    - "maintain_therapeutic_boundaries"
+    - "avoid_over_pathologizing"
+    
+  # TRANSPARENCIA
+  transparency_requirements:
+    - "user_can_request_explanation_of_adaptations"
+    - "clear_about_limitations"
+    - "honest_about_uncertainty"
+    
+  # SUPERVISIÓN
+  supervision_triggers:
+    - "unusual_pattern_detected"
+    - "adaptation_failure_rate_high"
+    - "user_reports_negative_experience"

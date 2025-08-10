@@ -1,0 +1,19 @@
+﻿source,title,description,start,end,tz,allDay,rrule,color,tags,arcano,microaccion,confidence
+oraculo,Cumpleaños Medio Ciclo · La Rueda de la Fortuna (Dorado),Mitad de tu ciclo anual. Microacción: gratitud por 9 giros clave.,2025-04-09,2025-04-09,America/Santiago,TRUE,,Dorado,evento,,,0.8
+oraculo,Portal 8·8 · El Sol (Verde),Manifestación y foco. Microacción: 8 intenciones al amanecer.,2025-08-08,2025-08-08,America/Santiago,TRUE,,Verde,"ritual,oraculo",,,0.8
+oraculo,Equinoccio de Primavera · La Justicia (Verde),Reequilibrio. Microacción: balance trabajo/descanso.,2025-09-22,2025-09-22,America/Santiago,TRUE,,Verde,evento,,,0.8
+oraculo,Eclipse Solar Parcial · La Muerte (Rojo),Cierre y depuración. Microacción: descarta 9 objetos/compromisos.,2025-09-29,2025-09-29,America/Santiago,TRUE,,Rojo,evento,,,0.8
+oraculo,Eclipse Lunar Total · La Luna (Rojo),Revelación y sueños. Microacción: registra sueños 3 noches.,2025-10-08,2025-10-08,America/Santiago,TRUE,,Rojo,evento,,,0.8
+oraculo,Retorno Solar · El Mago (Dorado),Inicio de ciclo. Declaración de intención anual (1 párrafo).,2025-10-09,2025-10-09,America/Santiago,TRUE,FREQ=YEARLY;BYMONTH=10;BYMONTHDAY=9,Dorado,"ritual,oraculo",El Mago,Declaración anual,0.8
+oraculo,Inicio Año Personal · El Mundo (Dorado),Comienzo del Año Personal. Visualiza el cierre del año.,2025-10-09,2025-10-09,America/Santiago,TRUE,,Dorado,evento,,,0.8
+oraculo,Portal 11·11 · La Justicia (Dorado),Sincronía 11:11. Microacción: 11 respiraciones + afirmación.,2025-11-11,2025-11-11,America/Santiago,TRUE,,Dorado,"ritual,oraculo",,,0.8
+oraculo,Solsticio de Verano · La Estrella (Verde),Expansión y celebración. Comparte 3 logros + 1 deseo.,2025-12-21,2025-12-21,America/Santiago,TRUE,FREQ=YEARLY;BYMONTH=12;BYMONTHDAY=21,Verde,evento,La Estrella,Comparte 3 logros y 1 deseo,0.8
+predictivo,CONTRATOS · Día recomendado (Predictivo),Mercurio favorecido + numerología del día. Revisa cláusulas y firma con calma.,2025-10-15,2025-10-15,America/Santiago,TRUE,,Verde,"predictivo,contratos",,,0.9
+predictivo,CONTRATOS · Día recomendado (Predictivo),Mercurio favorecido + numerología del día. Revisa cláusulas y firma con calma.,2025-10-22,2025-10-22,America/Santiago,TRUE,,Verde,"predictivo,contratos",,,0.9
+predictivo,CONTRATOS · Día recomendado (Predictivo),Mercurio favorecido + numerología del día. Revisa cláusulas y firma con calma.,2025-10-29,2025-10-29,America/Santiago,TRUE,,Verde,"predictivo,contratos",,,0.9
+predictivo,CONTRATOS · Día recomendado (Predictivo),Mercurio favorecido + numerología del día. Revisa cláusulas y firma con calma.,2025-11-06,2025-11-06,America/Santiago,TRUE,,Verde,"predictivo,contratos",,,0.9
+predictivo,CONTRATOS · Día recomendado (Predictivo),Mercurio favorecido + numerología del día. Revisa cláusulas y firma con calma.,2025-11-19,2025-11-19,America/Santiago,TRUE,,Verde,"predictivo,contratos",,,0.9
+predictivo,CONTRATOS · Día recomendado (Predictivo),Mercurio favorecido + numerología del día. Revisa cláusulas y firma con calma.,2025-11-26,2025-11-26,America/Santiago,TRUE,,Verde,"predictivo,contratos",,,0.9
+predictivo,CONTRATOS · Día recomendado (Predictivo),Mercurio favorecido + numerología del día. Revisa cláusulas y firma con calma.,2025-12-10,2025-12-10,America/Santiago,TRUE,,Verde,"predictivo,contratos",,,0.9
+predictivo,CONTRATOS · Día recomendado (Predictivo),Mercurio favorecido + numerología del día. Revisa cláusulas y firma con calma.,2025-12-17,2025-12-17,America/Santiago,TRUE,,Verde,"predictivo,contratos",,,0.9
+predictivo,CONTRATOS · Día recomendado (Predictivo),Mercurio favorecido + numerología del día. Revisa cláusulas y firma con calma.,2025-12-24,2025-12-24,America/Santiago,TRUE,,Verde,"predictivo,contratos",,,0.9

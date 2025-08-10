@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORÁCULO MENTALIA - RUT Astral</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-eye"></i>
+                    <span>ORÁCULO MENTALIA</span>
+                </div>
+                <div class="header-subtitle">
+                    Sistema Predictivo Neurodivergente
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Welcome Section -->
+            <section class="welcome-section" id="welcome">
+                <div class="welcome-content">
+                    <div class="welcome-icon">
+                        <i class="fas fa-star-and-crescent"></i>
+                    </div>
+                    <h1 class="welcome-title">Bienvenido a tu RUT Astral</h1>
+                    <p class="welcome-description">
+                        Descubre tu mapa cósmico personalizado que combina astrología, numerología y 
+                        neurodivergencia para crear una agenda predictiva única para ti.
+                    </p>
+                    <div class="welcome-features">
+                        <div class="feature">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>Agenda Predictiva</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-brain"></i>
+                            <span>Adaptado a tu Neurotipo</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-magic"></i>
+                            <span>Microacciones Personalizadas</span>
+                        </div>
+                    </div>
+                    <button class="btn-primary" onclick="startOnboarding()">
+                        <i class="fas fa-rocket"></i>
+                        Crear mi RUT Astral
+                    </button>
+                </div>
+            </section>
+
+            <!-- Onboarding Form -->
+            <section class="onboarding-section hidden" id="onboarding">
+                <div class="form-container">
+                    <div class="form-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progressFill"></div>
+                        </div>
+                        <span class="progress-text" id="progressText">Paso 1 de 4</span>
+                    </div>
+
+                    <!-- Step 1: Personal Data -->
+                    <div class="form-step active" id="step1">
+                        <div class="step-header">
+                            <i class="fas fa-user"></i>
+                            <h2>Datos Personales</h2>
+                            <p>Información básica para tu perfil</p>
+                        </div>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="nombreCompleto">Nombre Completo</label>
+                                <input type="text" id="nombreCompleto" placeholder="Tu nombre completo">
+                            </div>
+                            <div class="form-group">
+                                <label for="nombrePreferido">Nombre Preferido</label>
+                                <input type="text" id="nombrePreferido" placeholder="¿Cómo te gusta que te llamen?">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="tu@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="telefono">Teléfono (opcional)</label>
+                                <input type="tel" id="telefono" placeholder="+56 9 1234 5678">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Birth Data -->
+                    <div class="form-step" id="step2">
+                        <div class="step-header">
+                            <i class="fas fa-birthday-cake"></i>
+                            <h2>Datos de Nacimiento</h2>
+                            <p>Información para calcular tu carta natal</p>
+                        </div>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="fechaNacimiento">Fecha de Nacimiento</label>
+                                <input type="date" id="fechaNacimiento">
+                            </div>
+                            <div class="form-group">
+                                <label for="horaNacimiento">Hora de Nacimiento</label>
+                                <input type="time" id="horaNacimiento">
+                                <small>Si no la sabes exacta, usaremos el estimador</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="precisionHora">Precisión de la Hora</label>
+                                <select id="precisionHora">
+                                    <option value="exacta">Exacta (certificado de nacimiento)</option>
+                                    <option value="aproximada">Aproximada (±30 minutos)</option>
+                                    <option value="estimada">Estimada (±2 horas)</option>
+                                    <option value="desconocida">No la sé</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="ciudadNacimiento">Ciudad de Nacimiento</label>
+                                <input type="text" id="ciudadNacimiento" placeholder="Santiago, Chile">
+                            </div>
+                        </div>
+                        <div class="time-estimator" id="timeEstimator" style="display: none;">
+                            <h3><i class="fas fa-clock"></i> Estimador de Hora</h3>
+                            <p>Responde estas preguntas para estimar tu hora de nacimiento:</p>
+                            <div class="estimator-questions">
+                                <div class="question">
+                                    <label>¿Eres más activo por la mañana o por la noche?</label>
+                                    <select id="ritmoCircadiano">
+                                        <option value="">Selecciona...</option>
+                                        <option value="manana">Mañana (madrugador)</option>
+                                        <option value="tarde">Tarde/Noche (trasnochador)</option>
+                                        <option value="mixto">Mixto</option>
+                                    </select>
+                                </div>
+                                <div class="question">
+                                    <label>¿Cómo describirías tu personalidad?</label>
+                                    <select id="personalidad">
+                                        <option value="">Selecciona...</option>
+                                        <option value="extrovertido">Extrovertido y sociable</option>
+                                        <option value="introvertido">Introvertido y reflexivo</option>
+                                        <option value="equilibrado">Equilibrado</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button class="btn-secondary" onclick="estimateTime()">
+                                <i class="fas fa-calculator"></i>
+                                Estimar Hora
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Neurodivergent Profile -->
+                    <div class="form-step" id="step3">
+                        <div class="step-header">
+                            <i class="fas fa-brain"></i>
+                            <h2>Perfil Neurodivergente</h2>
+                            <p>Información para personalizar tu experiencia</p>
+                        </div>
+                        <div class="neurotype-selection">
+                            <h3>¿Te identificas con alguno de estos neurotipos?</h3>
+                            <div class="neurotype-grid">
+                                <div class="neurotype-card" data-neurotype="TDAH">
+                                    <i class="fas fa-bolt"></i>
+                                    <h4>TDAH</h4>
+                                    <p>Atención diversa, hiperfoco, creatividad</p>
+                                </div>
+                                <div class="neurotype-card" data-neurotype="Autismo">
+                                    <i class="fas fa-puzzle-piece"></i>
+                                    <h4>Autismo</h4>
+                                    <p>Procesamiento único, intereses intensos</p>
+                                </div>
+                                <div class="neurotype-card" data-neurotype="Altas_Capacidades">
+                                    <i class="fas fa-lightbulb"></i>
+                                    <h4>Altas Capacidades</h4>
+                                    <p>Pensamiento complejo, alta sensibilidad</p>
+                                </div>
+                                <div class="neurotype-card" data-neurotype="Otro">
+                                    <i class="fas fa-star"></i>
+                                    <h4>Otro/Mixto</h4>
+                                    <p>Combinación o neurotipo diferente</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="fortalezas">Fortalezas que reconoces en ti</label>
+                            <textarea id="fortalezas" placeholder="Ej: Creatividad, hiperfoco, pensamiento divergente..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="desafios">Desafíos que enfrentas</label>
+                            <textarea id="desafios" placeholder="Ej: Organización, gestión del tiempo, sensibilidad sensorial..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Preferences -->
+                    <div class="form-step" id="step4">
+                        <div class="step-header">
+                            <i class="fas fa-cog"></i>
+                            <h2>Preferencias Oraculares</h2>
+                            <p>Personaliza tu experiencia oracular</p>
+                        </div>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="sistemasPreferidos">Sistemas que te interesan</label>
+                                <div class="checkbox-group">
+                                    <label><input type="checkbox" value="tarot"> Tarot</label>
+                                    <label><input type="checkbox" value="astrologia"> Astrología</label>
+                                    <label><input type="checkbox" value="numerologia"> Numerología</label>
+                                    <label><input type="checkbox" value="runas"> Runas</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="estiloComunicacion">Estilo de comunicación preferido</label>
+                                <select id="estiloComunicacion">
+                                    <option value="directo">Directo y práctico</option>
+                                    <option value="simbolico">Simbólico y metafórico</option>
+                                    <option value="poetico">Poético y profundo</option>
+                                    <option value="mixto">Mixto</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="frecuenciaConsultas">Frecuencia de consultas</label>
+                                <select id="frecuenciaConsultas">
+                                    <option value="diaria">Diaria</option>
+                                    <option value="semanal">Semanal</option>
+                                    <option value="mensual">Mensual</option>
+                                    <option value="por_necesidad">Solo cuando lo necesite</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="consent-section">
+                            <h3>Consentimientos</h3>
+                            <div class="consent-group">
+                                <label>
+                                    <input type="checkbox" id="consentDatos" required>
+                                    Acepto el uso de mis datos astrológicos para generar mi perfil
+                                </label>
+                                <label>
+                                    <input type="checkbox" id="consentBlu">
+                                    Autorizo compartir mi perfil con BLU para terapia personalizada
+                                </label>
+                                <label>
+                                    <input type="checkbox" id="consentAnalisis">
+                                    Acepto el análisis de patrones para mejorar el sistema
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Navigation Buttons -->
+                    <div class="form-navigation">
+                        <button class="btn-secondary" id="prevBtn" onclick="previousStep()" style="display: none;">
+                            <i class="fas fa-arrow-left"></i>
+                            Anterior
+                        </button>
+                        <button class="btn-primary" id="nextBtn" onclick="nextStep()">
+                            Siguiente
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                        <button class="btn-primary" id="submitBtn" onclick="submitForm()" style="display: none;">
+                            <i class="fas fa-magic"></i>
+                            Crear mi RUT Astral
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Results Section -->
+            <section class="results-section hidden" id="results">
+                <div class="results-container">
+                    <div class="results-header">
+                        <i class="fas fa-star"></i>
+                        <h2>Tu RUT Astral está listo</h2>
+                        <p>Aquí tienes tu mapa cósmico personalizado</p>
+                    </div>
+
+                    <div class="results-grid">
+                        <!-- Carta Natal -->
+                        <div class="result-card">
+                            <div class="card-header">
+                                <i class="fas fa-sun"></i>
+                                <h3>Carta Natal</h3>
+                            </div>
+                            <div class="card-content">
+                                <div class="natal-info">
+                                    <div class="sign-info">
+                                        <span class="label">Sol:</span>
+                                        <span class="value" id="signoSolar">Libra</span>
+                                    </div>
+                                    <div class="sign-info">
+                                        <span class="label">Luna:</span>
+                                        <span class="value" id="signoLunar">Géminis</span>
+                                    </div>
+                                    <div class="sign-info">
+                                        <span class="label">Ascendente:</span>
+                                        <span class="value" id="ascendente">Capricornio</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Numerología -->
+                        <div class="result-card">
+                            <div class="card-header">
+                                <i class="fas fa-calculator"></i>
+                                <h3>Numerología</h3>
+                            </div>
+                            <div class="card-content">
+                                <div class="number-info">
+                                    <div class="number-item">
+                                        <span class="number" id="numeroVida">1</span>
+                                        <span class="label">Número de Vida</span>
+                                    </div>
+                                    <div class="number-item">
+                                        <span class="number" id="numeroAnual">1</span>
+                                        <span class="label">Año Personal</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Próximos Eventos -->
+                        <div class="result-card full-width">
+                            <div class="card-header">
+                                <i class="fas fa-calendar-alt"></i>
+                                <h3>Próximos Eventos Oraculares</h3>
+                            </div>
+                            <div class="card-content">
+                                <div class="events-list" id="proximosEventos">
+                                    <!-- Events will be populated by JavaScript -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="results-actions">
+                        <button class="btn-primary" onclick="downloadCalendar()">
+                            <i class="fas fa-download"></i>
+                            Descargar Calendario
+                        </button>
+                        <button class="btn-secondary" onclick="shareProfile()">
+                            <i class="fas fa-share"></i>
+                            Compartir Perfil
+                        </button>
+                        <button class="btn-secondary" onclick="consultOracle()">
+                            <i class="fas fa-eye"></i>
+                            Consultar Oráculo
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2025 MENTALIA - Ecosistema Neurodivergente</p>
+                <div class="footer-links">
+                    <a href="#privacy">Privacidad</a>
+                    <a href="#terms">Términos</a>
+                    <a href="#contact">Contacto</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay hidden" id="loadingOverlay">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <h3>Calculando tu RUT Astral...</h3>
+            <p>Conectando con las estrellas y tu esencia neurodivergente</p>
+        </div>
+    </div>
+
+    <script src="ui.js"></script>
+</body>
+</html>
+

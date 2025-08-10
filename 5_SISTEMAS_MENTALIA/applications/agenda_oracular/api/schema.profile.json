@@ -1,0 +1,315 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Perfil RUT Astral",
+  "description": "Schema para perfil astrológico y neurodivergente del usuario",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Identificador único del perfil",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "datos_personales": {
+      "type": "object",
+      "properties": {
+        "nombre_completo": {
+          "type": "string",
+          "maxLength": 100,
+          "description": "Nombre completo del usuario"
+        },
+        "nombre_preferido": {
+          "type": "string",
+          "maxLength": 50,
+          "description": "Nombre por el cual prefiere ser llamado"
+        },
+        "email": {
+          "type": "string",
+          "format": "email",
+          "description": "Email principal del usuario"
+        },
+        "telefono": {
+          "type": "string",
+          "pattern": "^\\+?[1-9]\\d{1,14}$",
+          "description": "Número de teléfono en formato internacional"
+        }
+      },
+      "required": ["nombre_completo", "email"]
+    },
+    "datos_natales": {
+      "type": "object",
+      "properties": {
+        "fecha_nacimiento": {
+          "type": "string",
+          "format": "date",
+          "description": "Fecha de nacimiento en formato YYYY-MM-DD"
+        },
+        "hora_nacimiento": {
+          "type": "string",
+          "format": "time",
+          "description": "Hora de nacimiento en formato HH:MM"
+        },
+        "precision_hora": {
+          "type": "string",
+          "enum": ["exacta", "aproximada", "estimada", "desconocida"],
+          "description": "Precisión de la hora de nacimiento"
+        },
+        "lugar_nacimiento": {
+          "type": "object",
+          "properties": {
+            "ciudad": {"type": "string"},
+            "region": {"type": "string"},
+            "pais": {"type": "string"},
+            "latitud": {"type": "number", "minimum": -90, "maximum": 90},
+            "longitud": {"type": "number", "minimum": -180, "maximum": 180},
+            "zona_horaria": {"type": "string"}
+          },
+          "required": ["ciudad", "pais"]
+        }
+      },
+      "required": ["fecha_nacimiento", "lugar_nacimiento"]
+    },
+    "carta_natal": {
+      "type": "object",
+      "properties": {
+        "signo_solar": {
+          "type": "string",
+          "enum": ["Aries", "Tauro", "Géminis", "Cáncer", "Leo", "Virgo", "Libra", "Escorpio", "Sagitario", "Capricornio", "Acuario", "Piscis"]
+        },
+        "signo_lunar": {
+          "type": "string",
+          "enum": ["Aries", "Tauro", "Géminis", "Cáncer", "Leo", "Virgo", "Libra", "Escorpio", "Sagitario", "Capricornio", "Acuario", "Piscis"]
+        },
+        "ascendente": {
+          "type": "string",
+          "enum": ["Aries", "Tauro", "Géminis", "Cáncer", "Leo", "Virgo", "Libra", "Escorpio", "Sagitario", "Capricornio", "Acuario", "Piscis"]
+        },
+        "planetas": {
+          "type": "object",
+          "properties": {
+            "mercurio": {"type": "string"},
+            "venus": {"type": "string"},
+            "marte": {"type": "string"},
+            "jupiter": {"type": "string"},
+            "saturno": {"type": "string"},
+            "urano": {"type": "string"},
+            "neptuno": {"type": "string"},
+            "pluton": {"type": "string"}
+          }
+        },
+        "casas": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "numero": {"type": "integer", "minimum": 1, "maximum": 12},
+              "signo": {"type": "string"},
+              "planetas": {"type": "array", "items": {"type": "string"}}
+            }
+          }
+        }
+      }
+    },
+    "numerologia": {
+      "type": "object",
+      "properties": {
+        "numero_vida": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9,
+          "description": "Número de vida calculado desde fecha de nacimiento"
+        },
+        "numero_personal_anual": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9,
+          "description": "Número personal para el año actual"
+        },
+        "numero_destino": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9,
+          "description": "Número de destino calculado desde nombre completo"
+        },
+        "numero_alma": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9,
+          "description": "Número del alma calculado desde vocales del nombre"
+        },
+        "numero_personalidad": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9,
+          "description": "Número de personalidad calculado desde consonantes"
+        }
+      }
+    },
+    "perfil_neurodivergente": {
+      "type": "object",
+      "properties": {
+        "neurotipos": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["TDAH", "Autismo", "Altas_Capacidades", "Dislexia", "Dispraxia", "Tourette", "Sensibilidad_Sensorial", "Otro"]
+          },
+          "description": "Neurotipos identificados o sospechados"
+        },
+        "diagnosticos_formales": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "neurotipo": {"type": "string"},
+              "fecha_diagnostico": {"type": "string", "format": "date"},
+              "profesional": {"type": "string"},
+              "nivel_certeza": {"type": "string", "enum": ["confirmado", "probable", "sospecha"]}
+            }
+          }
+        },
+        "fortalezas_nd": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Fortalezas identificadas relacionadas con neurodivergencia"
+        },
+        "desafios_nd": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Desafíos relacionados con neurodivergencia"
+        },
+        "estrategias_efectivas": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Estrategias que han resultado efectivas"
+        },
+        "sensibilidades": {
+          "type": "object",
+          "properties": {
+            "auditivas": {"type": "array", "items": {"type": "string"}},
+            "visuales": {"type": "array", "items": {"type": "string"}},
+            "tactiles": {"type": "array", "items": {"type": "string"}},
+            "olfativas": {"type": "array", "items": {"type": "string"}},
+            "gustativas": {"type": "array", "items": {"type": "string"}}
+          }
+        }
+      }
+    },
+    "preferencias_oraculares": {
+      "type": "object",
+      "properties": {
+        "sistemas_preferidos": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["tarot", "astrologia", "numerologia", "runas", "i_ching", "cartas_oraculo"]
+          }
+        },
+        "estilo_comunicacion": {
+          "type": "string",
+          "enum": ["directo", "simbolico", "poetico", "practico", "mixto"],
+          "description": "Estilo de comunicación preferido para consultas"
+        },
+        "nivel_profundidad": {
+          "type": "string",
+          "enum": ["basico", "intermedio", "avanzado", "maestro"],
+          "description": "Nivel de profundidad deseado en interpretaciones"
+        },
+        "frecuencia_consultas": {
+          "type": "string",
+          "enum": ["diaria", "semanal", "mensual", "por_necesidad"],
+          "description": "Frecuencia preferida para consultas oraculares"
+        },
+        "temas_interes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["proposito_vida", "relaciones", "carrera", "salud", "espiritualidad", "creatividad", "finanzas", "familia"]
+          }
+        }
+      }
+    },
+    "historial_terapeutico": {
+      "type": "object",
+      "properties": {
+        "sesiones_blu": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "fecha": {"type": "string", "format": "date"},
+              "tipo": {"type": "string"},
+              "duracion_minutos": {"type": "integer"},
+              "temas_tratados": {"type": "array", "items": {"type": "string"}},
+              "arcano_dominante": {"type": "string"},
+              "progreso_reportado": {"type": "integer", "minimum": 1, "maximum": 10}
+            }
+          }
+        },
+        "patrones_identificados": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "objetivos_actuales": {
+          "type": "array",
+          "items": {"type": "string"}
+        }
+      }
+    },
+    "configuracion_sistema": {
+      "type": "object",
+      "properties": {
+        "zona_horaria": {"type": "string"},
+        "idioma": {"type": "string", "default": "es"},
+        "notificaciones": {
+          "type": "object",
+          "properties": {
+            "eventos_oraculares": {"type": "boolean", "default": true},
+            "microacciones": {"type": "boolean", "default": true},
+            "recordatorios_rituales": {"type": "boolean", "default": true},
+            "sincronicidades": {"type": "boolean", "default": false}
+          }
+        },
+        "integraciones": {
+          "type": "object",
+          "properties": {
+            "google_calendar": {"type": "boolean", "default": false},
+            "apple_calendar": {"type": "boolean", "default": false},
+            "outlook": {"type": "boolean", "default": false},
+            "blu_agenda": {"type": "boolean", "default": true},
+            "menta_copilota": {"type": "boolean", "default": true}
+          }
+        }
+      }
+    },
+    "consentimientos": {
+      "type": "object",
+      "properties": {
+        "uso_datos_astrologicos": {"type": "boolean"},
+        "compartir_con_blu": {"type": "boolean"},
+        "analisis_patrones": {"type": "boolean"},
+        "investigacion_anonima": {"type": "boolean"},
+        "fecha_consentimiento": {"type": "string", "format": "date-time"}
+      },
+      "required": ["uso_datos_astrologicos", "fecha_consentimiento"]
+    },
+    "metadatos": {
+      "type": "object",
+      "properties": {
+        "fecha_creacion": {"type": "string", "format": "date-time"},
+        "ultima_actualizacion": {"type": "string", "format": "date-time"},
+        "version_perfil": {"type": "string"},
+        "completitud_porcentaje": {"type": "integer", "minimum": 0, "maximum": 100},
+        "fuente_datos": {"type": "string"},
+        "validado_por": {"type": "string"}
+      }
+    }
+  },
+  "required": [
+    "id",
+    "datos_personales",
+    "datos_natales",
+    "consentimientos"
+  ],
+  "additionalProperties": false
+}
+

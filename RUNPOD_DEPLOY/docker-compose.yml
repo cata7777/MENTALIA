@@ -1,0 +1,192 @@
+version: '3.8'
+
+services:
+  # Hub Central - MENTALIA UNIVERSE
+  mentalia-universe:
+    build: 
+      context: ../5_SISTEMAS_MENTALIA/MULTIVERSO_MENTAL_IA/universe
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=production
+      - DATABASE_URL=postgresql://mentalia:${DB_PASSWORD}@db:5432/mentalia_universe
+      - REDIS_URL=redis://redis:6379/0
+      - SECRET_KEY=${SECRET_KEY}
+      - JWT_SECRET_KEY=${JWT_SECRET_KEY}
+    depends_on:
+      - db
+      - redis
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Chat con 87 Agentes IA
+  chat-mentalia:
+    build:
+      context: ../5_SISTEMAS_MENTALIA/COMUNICACION_INTERACCION_SOCIAL_MENTAL_IA/chat
+      dockerfile: Dockerfile
+    ports:
+      - "5001:5001"
+    environment:
+      - FLASK_ENV=production
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - OPENAI_API_BASE=${OPENAI_API_BASE}
+      - AGENTS_CONFIG_PATH=/app/config/87_agents.json
+      - DATABASE_URL=postgresql://mentalia:${DB_PASSWORD}@db:5432/mentalia_chat
+      - REDIS_URL=redis://redis:6379/1
+    depends_on:
+      - db
+      - redis
+    restart: unless-stopped
+    volumes:
+      - ../3_AGENTES_PARTICULARES_INDEPENDIENTES:/app/config/agents
+
+  # Presentación para Socios
+  hiperfoco-web:
+    build:
+      context: ../5_SISTEMAS_MENTALIA/COMUNICACION_INTERACCION_SOCIAL_MENTAL_IA/hiperfoco
+      dockerfile: Dockerfile
+    ports:
+      - "5002:5002"
+    environment:
+      - FLASK_ENV=production
+      - SECRET_KEY=${SECRET_KEY}
+    restart: unless-stopped
+
+  # Sistema Médico Interoperable
+  agendas-clinicas:
+    build:
+      context: ../5_SISTEMAS_MENTALIA/AGENDAS_CLINICAS_MENTAL_IA
+      dockerfile: Dockerfile
+    ports:
+      - "5003:5003"
+    environment:
+      - FLASK_ENV=production
+      - DATABASE_URL=postgresql://mentalia:${DB_PASSWORD}@db:5432/mentalia_clinical
+      - MINSAL_API_KEY=${MINSAL_API_KEY}
+      - HL7_FHIR_ENDPOINT=${HL7_ENDPOINT}
+      - FONASA_API_KEY=${FONASA_API_KEY}
+    depends_on:
+      - db
+    restart: unless-stopped
+
+  # Automatización Jurídica
+  despacho-legal:
+    build:
+      context: ../5_SISTEMAS_MENTALIA/DESPACHO_LEGAL_MENTAL_IA
+      dockerfile: Dockerfile
+    ports:
+      - "5004:5004"
+    environment:
+      - FLASK_ENV=production
+      - DATABASE_URL=postgresql://mentalia:${DB_PASSWORD}@db:5432/mentalia_legal
+      - LEGAL_API_KEY=${LEGAL_API_KEY}
+      - CHILECOMPRA_API=${CHILECOMPRA_API}
+    depends_on:
+      - db
+    restart: unless-stopped
+
+  # OTEC Certificado
+  formacion-laboral:
+    build:
+      context: ../5_SISTEMAS_MENTALIA/FORMACION_LABORAL_MENTAL_IA
+      dockerfile: Dockerfile
+    ports:
+      - "5005:5005"
+    environment:
+      - FLASK_ENV=production
+      - DATABASE_URL=postgresql://mentalia:${DB_PASSWORD}@db:5432/mentalia_education
+      - SENCE_API_KEY=${SENCE_API_KEY}
+      - OTEC_CERTIFICATION=${OTEC_CERT}
+    depends_on:
+      - db
+    restart: unless-stopped
+
+  # Herramientas Neurodivergentes
+  mental-ia-nd:
+    build:
+      context: ../5_SISTEMAS_MENTALIA/MENTAL_IA_NEURODIVERGENTE
+      dockerfile: Dockerfile
+    ports:
+      - "5006:5006"
+    environment:
+      - FLASK_ENV=production
+      - DATABASE_URL=postgresql://mentalia:${DB_PASSWORD}@db:5432/mentalia_nd
+      - ND_PROFILES_API=${ND_PROFILES_API}
+    depends_on:
+      - db
+    restart: unless-stopped
+
+  # API Gateway Central
+  api-gateway:
+    build:
+      context: ./gateway
+      dockerfile: Dockerfile
+    ports:
+      - "5100:5100"
+    environment:
+      - FLASK_ENV=production
+      - SERVICES_CONFIG=/app/config/services.json
+    depends_on:
+      - mentalia-universe
+      - chat-mentalia
+      - hiperfoco-web
+      - agendas-clinicas
+      - despacho-legal
+      - formacion-laboral
+      - mental-ia-nd
+    restart: unless-stopped
+
+  # Base de Datos Principal
+  db:
+    image: postgres:15
+    environment:
+      - POSTGRES_DB=mentalia
+      - POSTGRES_USER=mentalia
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init-scripts:/docker-entrypoint-initdb.d
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U mentalia"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Cache y Messaging
+  redis:
+    image: redis:7-alpine
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  # Monitoreo y Logs
+  monitoring:
+    image: grafana/grafana:latest
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=${GRAFANA_PASSWORD}
+    volumes:
+      - grafana_data:/var/lib/grafana
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+  redis_data:
+  grafana_data:
+
+networks:
+  default:
+    driver: bridge
+
