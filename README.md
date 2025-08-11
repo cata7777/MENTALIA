@@ -423,53 +423,53 @@ Los agentes están organizados en `/agentes_mentalia/` por categorías:
 
 ---
 
-**🧠 MENTALIA Enterprise - Donde la Inteligencia Artificial se encuentra con la Salud Mental para crear un futuro más inteligente, empático y eficiente.**
+## 🌐 DESARROLLO EN GITHUB CODESPACES
 
-*"No solo automatizamos procesos, empoderamos personas y transformamos organizaciones."*
+### **☁️ CÓMO ABRIR MENTALIA EN CODESPACES:**
 
----
+#### **🚀 Método 1: Desde GitHub (Más fácil):**
+1. **Ve a:** `https://github.com/cata7777/MENTALIA`
+2. **Clic en:** botón verde **"Code"**
+3. **Selecciona:** pestaña **"Codespaces"**
+4. **Clic en:** **"Create codespace on main"**
+5. **¡Listo!** Se abre automáticamente en VS Code web
 
-**📊 Estado del Repositorio:** 626 archivos | 87 Agentes IA | 7 Aplicaciones | 5 Servicios Docker | ✅ 100% Operativo
-# 2. Enter
-# 3. Volver a abrir solo README.md
-```
-
-#### **Método 3: Reiniciar VS Code:**
+#### **🌐 Método 2: URL directa:**
 ```bash
-# Cerrar completamente VS Code y volver a abrir
-# Esto limpia todas las pestañas temporales
+# Abre directamente en Codespaces:
+https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=REPO_ID
 ```
 
-### **✅ ¿CUÁL ES EL ARCHIVO REAL?**
+### **⚡ COMANDOS PARA INICIAR EN CODESPACES:**
 
-**📄 El archivo REAL es:**
-- **Nombre:** `README.md` (sin números, sin flechas)
-- **Ubicación:** En la raíz del proyecto `/Users/catalinarojolema/REPO GIT /MENTALIA/`
-- **Estado:** ⚪ Blanco (ya sincronizado)
-
-### **🎯 COMANDO PARA VERIFICAR QUE TODO ESTÁ BIEN:**
-
+#### **🐳 Una vez en Codespaces, ejecutar:**
 ```bash
-cd "/Users/catalinarojolema/REPO GIT /MENTALIA" && ls -la README.md && git status README.md
+# Instalar dependencias
+pip install -r requirements.txt
+
+# Configurar entorno
+cp .env.example .env
+
+# Iniciar infraestructura Docker
+./start.sh
+
+# Verificar servicios
+docker ps
 ```
 
-**✅ Debería mostrar:**
-```bash
--rw-r--r--  1 catalinarojolema  staff  [tamaño] [fecha] README.md
-```
+### **🌟 VENTAJAS DE CODESPACES:**
 
-### **💡 ¿POR QUÉ PASA ESTO?**
+#### **✅ Para ti:**
+- **💻 No necesitas** configurar nada local
+- **☁️ Todo en la nube** - funciona desde cualquier dispositivo
+- **🚀 Arranca rápido** - entorno pre-configurado
+- **🔄 Sincronización** automática con GitHub
 
-**🔄 VS Code crea archivos temporales cuando:**
-- Comparas versiones diferentes
-- Tienes conflictos de merge
-- Abres el mismo archivo varias veces
-- Hay cambios pendientes que muestras en preview
-
-**🎯 SOLUCIÓN SIMPLE:**
-- **Usa solo** el `README.md` sin números
-- **Cierra** las pestañas extras
-- **El archivo real** es el que está en tu carpeta del proyecto
+#### **✅ Para colaboradores:**
+- **🤝 Entorno idéntico** para todos
+- **📦 Dependencias** ya instaladas
+- **🐳 Docker** pre-configurado
+- **⚡ Desarrollo** inmediato
 
 ---
 
