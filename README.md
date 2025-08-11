@@ -483,7 +483,7 @@ code --install-extension ms-vscode.vscode-json
 ```bash
 # Dentro de VS Code, abrir terminal (Ctrl + `) y ejecutar:
 git add README.md
-git commit -m "📝 README completo con FAQ integrado"
+git commit -m "🧠 README completo con FAQ integrado"
 git push
 ```
 
