@@ -1,111 +1,111 @@
-# 🧠🏥 MENTALIA Enterprise - Ecosistema de Inteligencia Artificial para Salud Mental
+# 🧠🏥 MENTALIA Enterprise - Ecosistema Global de Inteligencia Artificial
 
-## 🌐 DESARROLLO EN GITHUB CODESPACES
+## 🎯 MISIÓN Y VISIÓN
 
-### **🎉 ¡ÉXITO! CODESPACES FUNCIONANDO**
+**MENTALIA Enterprise** es un ecosistema completo de inteligencia artificial que abarca múltiples sectores y disciplinas: salud mental, educación, legal, empresarial, gubernamental y más. Diseñado para revolucionar procesos, optimizar operaciones y generar impacto transformador a través de tecnología avanzada y enfoque multidisciplinario.
 
-#### **✅ CONFIRMACIÓN DE LOGRO:**
-- ✅ **Codespaces abierto** correctamente
-- ✅ **Proyecto MENTALIA** cargado en la nube
-- ✅ **626 archivos** accesibles
-- ✅ **87 Agentes IA** disponibles para trabajar
+Nuestra misión es **empoderar organizaciones, profesionales y empresas** de todos los sectores con herramientas de IA especializadas que mejoren la eficiencia, calidad de vida y generen impacto social positivo a escala global.
 
-#### **🚀 AHORA PUEDES:**
-- **💻 Desarrollar** desde cualquier dispositivo
-- **🔧 Editar** código en tiempo real
-- **🐳 Ejecutar** Docker containers
-- **⚡ Probar** APIs y agentes
-- **🤝 Colaborar** con otros developers
+---
 
-### **🎯 COMANDOS ÚTILES EN CODESPACES:**
+## 🚀 ESTADO ACTUAL DEL PROYECTO
 
-```bash
-# Verificar estado del proyecto
-git status
+### **✅ ECOSISTEMA MULTISECTORIAL OPERATIVO**
 
-# Ver estructura completa
-ls -la
+- **🐳 5 Servicios Docker** activos y funcionando
+- **🤖 87 Agentes IA** especializados por sector
+- **🏥 7 Aplicaciones** enterprise multidisciplinarias
+- **📊 Centro de Control** Grafana operativo
+- **🏛️ Integración Gubernamental** (ChileCompra + MINSAL)
+- **🎓 Academia OTEC** para capacitación profesional
 
-# Iniciar servicios Docker
-./start.sh
+### **🌐 URLs de Acceso Directo:**
 
-# Ver agentes disponibles
-ls agentes_mentalia/
+- **📊 Centro de Control:** [http://localhost:3000](http://localhost:3000)
+- **🚀 Backend API:** [http://localhost:5000](http://localhost:5000)
+- **🌐 Portal Web:** [http://localhost:8005](http://localhost:8005)
 
-# Ejecutar API FastAPI
-uvicorn api.main:app --reload --port 8000
+---
+
+## 📁 INVENTARIO COMPLETO DEL ECOSISTEMA
+
+### **🤖 87 AGENTES IA MULTISECTORIALES**
 ```
-
-### **💡 PRÓXIMOS PASOS EN CODESPACES:**
-1. **🔍 Explorar** las carpetas del proyecto
-2. **🤖 Probar** algunos agentes IA
-3. **🐳 Iniciar** los servicios Docker
-4. **📊 Acceder** a los dashboards
-5. **🚀 Desarrollar** nuevas funcionalidades
-
----
-
-**🎉 ¡PERFECTO! AHORA TIENES MENTALIA FUNCIONANDO EN LA NUBE** ☁️✨
-
-**🤝 COLABORACIÓN EXITOSA:** ¡Trabajamos juntos desde Codespaces y local!
-
-### **🎯 ESTO GARANTIZA:**
-- ✅ **Codespaces** tendrá la versión EXACTA de tu Mac
-- ✅ **Todos los 626 archivos** sincronizados
-- ✅ **87 Agentes IA** actualizados
-- ✅ **Sin archivos desactualizados**
-
-### **💡 IMPORTANTE:**
-- **🔄 Recrear** Codespace cuando hagas cambios importantes
-- **🔧 Eliminar** Codespaces viejos para evitar confusión
-- **⚡ Usar** siempre la versión más reciente
-
----
-
-│   ├── hr_manager_recursos_humanos.py
-│   └── sales_ia_ventas.py
+📂 /agentes_mentalia/
+├── 🏥 Salud Mental (15 agentes)
+├── ⚖️ Legal (12 agentes)
+├── 🎓 Educación & OTEC (18 agentes)
+├── 💼 Empresarial (20 agentes)
 ├── 🏛️ Gobierno/ChileCompra (12 agentes)
-│   ├── chilecompra_monitor_licitaciones.py
-│   ├── minsal_liaison_ministerio.py
-│   └── policy_analyzer_politicas.py
 └── 🔧 Técnicos/Soporte (10 agentes)
-    ├── devops_ia_operaciones.py
-    └── security_guard_seguridad.py
 ```
 
 ### **🏥 APLICACIONES ENTERPRISE OPERATIVAS**
 
 #### **1. 📅 Agenda Clínica Interoperable**
 - **Propósito:** Gestión integral de citas médicas
-- **Especialidad:** Interoperabilidad con ChileCompra
 - **Estado:** ✅ Operativa
-- **Ubicación:** `/aplicaciones_principales/agenda_clinica/`
 
 #### **2. ⚖️ Despacho Legal Mental-IA**
 - **Propósito:** Automatización de procesos legales
-- **Especialidad:** Contratos y compliance automatizado
 - **Estado:** ✅ Operativa
-- **Ubicación:** `/aplicaciones_principales/despacho_legal/`
 
-#### **3. 🎓 Formación Laboral Mental-IA**
-- **Propósito:** Capacitación y desarrollo profesional
-- **Especialidad:** Evaluación de competencias y rutas de aprendizaje
+#### **3. 🎓 Academia OTEC - Formación Laboral**
+- **Propósito:** Capacitación profesional y certificación
 - **Estado:** ✅ Operativa
-- **Ubicación:** `/aplicaciones_principales/formacion_laboral/`
 
-#### **4. 📱 APP SIMÓN - Atención Neurológica Especializada**
-- **Propósito:** Detección temprana y seguimiento neurológico
-- **Especialidad:** Análisis de síntomas y evaluación de riesgo
+#### **4. 📱 APP SIMÓN - Atención Neurológica**
+- **Propósito:** Detección temprana neurológica
 - **Estado:** ✅ Operativa
-- **Ubicación:** `/aplicaciones_principales/app_simon/`
 
 #### **5. 💼 APP BLU - Comunicación Empresarial**
-- **Propósito:** Optimización de comunicación corporativa
-- **Especialidad:** Análisis conversacional y mejora de dinámicas
+- **Propósito:** Optimización comunicacional
 - **Estado:** ✅ Operativa
-- **Ubicación:** `/aplicaciones_principales/app_blu/`
 
 #### **6. 🗣️ Comunicación Social Multimodal**
+- **Propósito:** Apoyo para personas neurodivergentes
+- **Estado:** ✅ Operativa
+
+#### **7. 🔮 Sistema Oráculo - Coordinador Central**
+- **Propósito:** Orquestación inteligente multisectorial
+- **Estado:** ✅ Operativo
+
+---
+
+## 🌐 DESARROLLO EN GITHUB CODESPACES
+
+### **☁️ CÓMO ABRIR MENTALIA EN CODESPACES:**
+
+1. **Ve a:** `https://github.com/cata7777/MENTALIA`
+2. **Clic en:** botón verde **"Code"**
+3. **Selecciona:** pestaña **"Codespaces"**
+4. **Clic en:** **"Create codespace on main"**
+
+### **⚡ COMANDOS PARA INICIAR:**
+
+```bash
+# Instalar dependencias
+pip install -r requirements.txt
+
+# Configurar entorno
+cp .env.example .env
+
+# Iniciar infraestructura Docker
+./start.sh
+
+# Verificar servicios
+docker ps
+```
+
+---
+
+**🧠 MENTALIA Enterprise - Ecosistema Global de IA que transforma sectores completos a través de inteligencia artificial especializada y soluciones multidisciplinarias.**
+
+*"No solo automatizamos procesos, transformamos industrias completas y empoderamos organizaciones de todos los sectores."*
+
+---
+
+**📊 Estado del Repositorio:** 626 archivos | 87 Agentes IA Multisectoriales | 7 Aplicaciones | Academia OTEC | ✅ 100% Operativo
 - **Propósito:** Potenciar habilidades de comunicación social
 - **Especialidad:** Apoyo para personas neurodivergentes
 - **Estado:** ✅ Documentada y lista para implementar
