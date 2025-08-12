@@ -1,0 +1,1 @@
+# plataforma-otec-nd.schema.js - archivo de módulo plataforma

@@ -1,0 +1,1 @@
+# LOGICA_EXPORTACION_CV_ND.py - archivo de módulo cv

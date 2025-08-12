@@ -1,0 +1,3 @@
+> git add -A -- .
+error: 'APLICACIONES_EXTRAIDAS/TODAS_LAS_APPS/AGENDA_CLINICA_PROFESIONAL_DEPLOY/AGENDA_CLINICA_MENTALIA/frontend/' does not have a commit checked out
+fatal: adding files failed

@@ -85,7 +85,7 @@ reglas_protocolos = {
     },
     'supervision': {
         'descripcion': 'Monitoreo + control + optimización + mejora continua',
-        'aplicacion_bots': 'BIGBOSS orchestration + MINIRRIA routing + ULV monitoring',
+        'aplicacion_bots': 'BIGBOSS orchestration + MENTALIA_BB routing + ULV monitoring',
         'protocolos': ['Real-time monitoring', 'performance optimization', 'user satisfaction'],
         'escalamiento': 'Auto-scaling + load balancing + resource optimization'
     },
@@ -199,7 +199,7 @@ estetica_nd = {
 operacion_cross_sistema = {
     'orquestacion': {
         'descripcion': 'Coordinación suprema + distribución inteligente + optimización global',
-        'implementacion': 'BIGBOSS command center + MINIRRIA smart routing + resource optimization',
+        'implementacion': 'BIGBOSS command center + MENTALIA_BB smart routing + resource optimization',
         'algoritmos': ['load balancing', 'resource allocation', 'performance optimization'],
         'metricas': ['system health', 'user satisfaction', 'operational efficiency']
     },
@@ -387,7 +387,7 @@ catalina_magistral = {
     'desafios_actuales_identificados': {
         'sobrecarga_cognitiva': {
             'problema': 'Manejas demasiadas dimensiones simultáneamente',
-            'solucion': 'BIGBOSS + MINIRRIA para delegación inteligente',
+            'solucion': 'BIGBOSS + MENTALIA_BB para delegación inteligente',
             'implementacion': 'Dashboard ejecutivo + priorización automática + delegación IA'
         },
         'perfeccionismo_paralizante': {
@@ -544,7 +544,7 @@ catalina_next_level = {
 fase_1_implementacion = {
     'semana_1_2': {
         'bigboss_deployment': 'Deploy dashboard ejecutivo completo',
-        'minirria_activation': 'Activar routing inteligente cross-sistemas',
+        'mentalia_bb_activation': 'Activar routing inteligente cross-sistemas',
         'ulv_monitoring': 'Implementar monitoreo coherencia 24/7',
         'blu_evolution': 'Upgrade BLU a versión magistral'
     },

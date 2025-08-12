@@ -1,0 +1,23 @@
+{
+  "name": "agenda-clinica-js-backend",
+  "version": "2.0.0",
+  "description": "Backend JavaScript para Agenda Clínica Interoperable ND - Sistema de gestión clínica neurodivergente - Migrado desde Python según especificaciones Favi 2026",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["neurodivergente", "agenda", "clinica", "interoperable", "javascript", "hyperfoco", "gestion-pacientes"],
+  "author": "Ecosistema ND",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "sqlite3": "^5.1.6",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "dotenv": "^16.3.1"
+  }
+}
+

@@ -123,11 +123,13 @@ Sistema de Formación Académica Inteligente especializado en educación adaptad
 - **Módulos educativos especializados:** Contenido adaptado por neurotipo
 - **Evaluación adaptativa:** Sistemas de evaluación personalizados
 
-### 👥 INCLUSIÓN LABORAL NEURODIVERGENTE MENTAL-IA (1 aplicación)
+### 👥 INCLUSIÓN LABORAL NEURODIVERGENTE MENTAL-IA (3 aplicaciones)
 
-Sistema especializado en inserción laboral para neurodivergentes con ajustes razonables.
+Sistema especializado en inserción laboral para neurodivergentes con ajustes razonables, currículums adaptativos y gestión de trabajo independiente.
 
 **Aplicaciones principales:**
+- **CV ND:** Generador de currículums neurodivergentes que convierten TDAH→Multitasking
+- **FL_ND (FREELANCER):** Plataforma para trabajo independiente y gestión de proyectos ND
 - **WHITHYOU:** Plataforma de inclusión laboral especializada
 
 ### 🔗 GESTIÓN LABORAL INDEPENDIENTE MENTAL-IA (3 aplicaciones)
