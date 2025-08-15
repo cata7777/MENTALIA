@@ -1,0 +1,210 @@
+# MENTALIA - Configuración del Motor de Mentalización
+# Parámetros para procesamiento de estados emocionales y patrones ND
+
+version: "2.0"
+created_by: "Catalina Rojo Lema"
+updated: "2025-01-05"
+
+# CONFIGURACIÓN GENERAL
+mentalization_engine:
+  mode: "therapeutic_symbolic"
+  processing_depth: "dimensional"
+  response_style: "neuroaffirmative"
+  
+# PESOS EMOCIONALES
+emotional_weights:
+  # Emociones que requieren más contención
+  high_intensity:
+    ansiedad: 0.8
+    ira: 0.9
+    miedo: 0.8
+    panico: 0.95
+    
+  # Emociones que requieren validación
+  medium_intensity:
+    tristeza: 0.7
+    soledad: 0.6
+    frustracion: 0.7
+    verguenza: 0.8
+    
+  # Emociones que requieren celebración
+  low_intensity:
+    alegria: 0.3
+    tranquilidad: 0.2
+    satisfaccion: 0.3
+    esperanza: 0.4
+
+# PESOS PATRONES NEURODIVERGENTES
+nd_pattern_weights:
+  # Patrones que requieren estrategias inmediatas
+  immediate_support:
+    sobrecarga_sensorial: 0.8
+    meltdown: 0.9
+    shutdown: 0.85
+    crisis_ejecutiva: 0.7
+    
+  # Patrones que requieren validación y recursos
+  adaptive_support:
+    masking: 0.7
+    hiperfoco: 0.6
+    stim: 0.4
+    procesamiento_diferente: 0.5
+    
+  # Patrones que requieren celebración
+  strengths:
+    atencion_detalle: 0.2
+    pensamiento_sistematico: 0.3
+    creatividad_divergente: 0.3
+    hiperfoco_productivo: 0.4
+
+# CONFIGURACIÓN DE RESPUESTAS
+response_configuration:
+  containment_threshold: 0.7  # Umbral para activar contención
+  validation_threshold: 0.5   # Umbral para activar validación
+  resource_threshold: 0.6     # Umbral para ofrecer recursos
+  
+  # Tipos de respuesta
+  response_types:
+    immediate_containment:
+      keywords: ["crisis", "colapso", "no puedo más", "abrumada"]
+      response_time: "instant"
+      priority: "high"
+      
+    emotional_validation:
+      keywords: ["siento que", "me pasa que", "necesito"]
+      response_time: "immediate"
+      priority: "medium"
+      
+    nd_affirmation:
+      keywords: ["diferente", "rara", "no encajo", "no normal"]
+      response_time: "immediate"
+      priority: "high"
+      
+    resource_offering:
+      keywords: ["como puedo", "necesito ayuda", "que hago"]
+      response_time: "considered"
+      priority: "medium"
+
+# ACTIVADORES DE MENTALIZACIÓN
+mentalization_triggers:
+  emotional_regulation:
+    trigger_patterns: ["desregulación", "caos emocional", "no puedo controlar"]
+    response_approach: "containment_and_breathing"
+    symbols: ["🌊", "🧘‍♀️"]
+    
+  nd_identity_support:
+    trigger_patterns: ["no soy normal", "algo mal conmigo", "no encajo"]
+    response_approach: "affirmation_and_reframe"
+    symbols: ["✨", "🦋"]
+    
+  executive_function_support:
+    trigger_patterns: ["no puedo organizarme", "caos mental", "abrumada por tareas"]
+    response_approach: "structure_and_tools"
+    symbols: ["🧩", "⚙️"]
+    
+  sensory_support:
+    trigger_patterns: ["demasiado ruido", "sobrecarga", "sensible a"]
+    response_approach: "protective_strategies"
+    symbols: ["🛡️", "🏔️"]
+
+# CONFIGURACIÓN DE MEMORIA CONTEXTUAL
+contextual_memory:
+  session_retention: 30  # días
+  pattern_tracking: true
+  emotional_trends: true
+  nd_evolution: true
+  
+  # Elementos a recordar
+  track_elements:
+    - "emotional_patterns"
+    - "nd_strengths"
+    - "triggers_identified"
+    - "effective_resources"
+    - "symbolic_resonance"
+
+# CONFIGURACIÓN DE FEEDBACK LOOPS
+feedback_loops:
+  emotional_regulation_loop:
+    input_monitors: ["emotional_intensity", "regulation_success"]
+    adjustment_rate: 0.1
+    memory_window: 7  # sesiones
+    
+  nd_affirmation_loop:
+    input_monitors: ["identity_validation", "self_acceptance"]
+    adjustment_rate: 0.15
+    memory_window: 10
+    
+  therapeutic_alliance_loop:
+    input_monitors: ["rapport_indicators", "trust_markers"]
+    adjustment_rate: 0.05
+    memory_window: 15
+
+# PARÁMETROS DE PERSONALIZACIÓN
+personalization:
+  adaptation_rate: 0.2  # Qué tan rápido se adapta a cada usuario
+  
+  # Factores de personalización
+  factors:
+    communication_style:
+      formal: 0.3
+      casual: 0.7
+      
+    symbolic_resonance:
+      high_symbolic: 0.8
+      practical_focus: 0.2
+      
+    nd_awareness:
+      high_awareness: 0.9
+      discovering: 0.6
+      
+    therapeutic_readiness:
+      therapy_experienced: 0.8
+      therapy_new: 0.4
+
+# CONFIGURACIÓN DE ESCALADO
+escalation_protocols:
+  crisis_indicators:
+    - "ideación suicida"
+    - "autolesión"
+    - "crisis severa"
+    - "descompensación"
+    
+  crisis_response:
+    immediate_containment: true
+    professional_referral: true
+    crisis_resources: true
+    follow_up_required: true
+
+# MÉTRICAS DE ÉXITO
+success_metrics:
+  mentalization_indicators:
+    - "emotional_awareness_increase"
+    - "regulation_skill_development"
+    - "nd_identity_acceptance"
+    - "adaptive_strategy_adoption"
+    
+  session_quality:
+    - "therapeutic_rapport"
+    - "user_engagement"
+    - "symbolic_resonance"
+    - "practical_utility"
+
+# CONFIGURACIÓN EXPERIMENTAL
+experimental_features:
+  enable_dream_analysis: false
+  enable_body_awareness: true
+  enable_relational_patterns: true
+  enable_trauma_informed: true
+  
+# LÍMITES Y SALVAGUARDAS
+safety_limits:
+  max_session_intensity: 0.8
+  emotional_overwhelm_threshold: 0.9
+  crisis_detection_sensitivity: 0.7
+  
+  # Límites éticos
+  ethical_boundaries:
+    no_diagnosis: true
+    no_medication_advice: true
+    respect_autonomy: true
+    maintain_boundaries: true

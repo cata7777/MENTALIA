@@ -1,0 +1,153 @@
+BEGIN:VCALENDAR
+PRODID:-//Agenda Oracular//Catalina//ES
+VERSION:2.0
+CALSCALE:GREGORIAN
+X-WR-TIMEZONE:America/Santiago
+X-WR-CALNAME:Agenda Oracular 2025 · Catalina
+BEGIN:VEVENT
+UID:mid-birthday-2025@agenda-oracular
+DTSTART;VALUE=DATE:20250409
+DTEND;VALUE=DATE:20250410
+SUMMARY:Cumpleaños Medio Ciclo · La Rueda de la Fortuna (Dorado)
+DESCRIPTION:Mitad de tu ciclo anual. Microacción: gratitud por 9 giros clave.\nColor:DORADO
+CATEGORIES:DORADO
+END:VEVENT
+BEGIN:VEVENT
+UID:portal-8-8-2025@agenda-oracular
+DTSTART;VALUE=DATE:20250808
+DTEND;VALUE=DATE:20250809
+SUMMARY:Portal 8·8 · El Sol (Verde)
+DESCRIPTION:Manifestación y foco. Microacción: 8 intenciones al amanecer.\nColor:VERDE
+CATEGORIES:VERDE
+END:VEVENT
+BEGIN:VEVENT
+UID:equinoccio-primavera-2025@agenda-oracular
+DTSTART;VALUE=DATE:20250922
+DTEND;VALUE=DATE:20250923
+SUMMARY:Equinoccio de Primavera · La Justicia (Verde)
+DESCRIPTION:Reequilibrio. Microacción: balance trabajo/descanso.\nColor:VERDE
+CATEGORIES:VERDE
+END:VEVENT
+BEGIN:VEVENT
+UID:eclipse-solar-2025-09-29@agenda-oracular
+DTSTART;VALUE=DATE:20250929
+DTEND;VALUE=DATE:20250930
+SUMMARY:Eclipse Solar Parcial · La Muerte (Rojo)
+DESCRIPTION:Cierre y depuración. Microacción: descarta 9 objetos/compromisos.\nColor:ROJO
+CATEGORIES:ROJO
+END:VEVENT
+BEGIN:VEVENT
+UID:eclipse-lunar-2025-10-08@agenda-oracular
+DTSTART;VALUE=DATE:20251008
+DTEND;VALUE=DATE:20251009
+SUMMARY:Eclipse Lunar Total · La Luna (Rojo)
+DESCRIPTION:Revelación y sueños. Microacción: registra sueños 3 noches.\nColor:ROJO
+CATEGORIES:ROJO
+END:VEVENT
+BEGIN:VEVENT
+UID:retorno-solar-2025@agenda-oracular
+DTSTART;VALUE=DATE:20251009
+DTEND;VALUE=DATE:20251010
+SUMMARY:Retorno Solar · El Mago (Dorado)
+DESCRIPTION:Inicio de ciclo. Declaración de intención anual (1 párrafo).\nColor:DORADO
+CATEGORIES:DORADO
+RRULE:FREQ=YEARLY;BYMONTH=10;BYMONTHDAY=9
+END:VEVENT
+BEGIN:VEVENT
+UID:inicio-ano-personal-2025@agenda-oracular
+DTSTART;VALUE=DATE:20251009
+DTEND;VALUE=DATE:20251010
+SUMMARY:Inicio Año Personal · El Mundo (Dorado)
+DESCRIPTION:Comienzo del Año Personal. Visualiza el cierre del año.\nColor:DORADO
+CATEGORIES:DORADO
+END:VEVENT
+BEGIN:VEVENT
+UID:portal-11-11-2025@agenda-oracular
+DTSTART;VALUE=DATE:20251111
+DTEND;VALUE=DATE:20251112
+SUMMARY:Portal 11·11 · La Justicia (Dorado)
+DESCRIPTION:Sincronía 11:11. Microacción: 11 respiraciones + afirmación.\nColor:DORADO
+CATEGORIES:DORADO
+END:VEVENT
+BEGIN:VEVENT
+UID:solsticio-verano-2025@agenda-oracular
+DTSTART;VALUE=DATE:20251221
+DTEND;VALUE=DATE:20251222
+SUMMARY:Solsticio de Verano · La Estrella (Verde)
+DESCRIPTION:Expansión y celebración. Comparte 3 logros + 1 deseo.\nColor:VERDE
+CATEGORIES:VERDE
+RRULE:FREQ=YEARLY;BYMONTH=12;BYMONTHDAY=21
+END:VEVENT
+BEGIN:VEVENT
+UID:contratos-2025-10-15@agenda-oracular
+DTSTART;VALUE=DATE:20251015
+DTEND;VALUE=DATE:20251016
+SUMMARY:CONTRATOS · Día recomendado (Predictivo)
+DESCRIPTION:Mercurio favorecido + numerología del día. Revisa cláusulas y firma con calma.\nColor:VERDE
+CATEGORIES:VERDE
+END:VEVENT
+BEGIN:VEVENT
+UID:contratos-2025-10-22@agenda-oracular
+DTSTART;VALUE=DATE:20251022
+DTEND;VALUE=DATE:20251023
+SUMMARY:CONTRATOS · Día recomendado (Predictivo)
+DESCRIPTION:Mercurio favorecido + numerología del día. Revisa cláusulas y firma con calma.\nColor:VERDE
+CATEGORIES:VERDE
+END:VEVENT
+BEGIN:VEVENT
+UID:contratos-2025-10-29@agenda-oracular
+DTSTART;VALUE=DATE:20251029
+DTEND;VALUE=DATE:20251030
+SUMMARY:CONTRATOS · Día recomendado (Predictivo)
+DESCRIPTION:Mercurio favorecido + numerología del día. Revisa cláusulas y firma con calma.\nColor:VERDE
+CATEGORIES:VERDE
+END:VEVENT
+BEGIN:VEVENT
+UID:contratos-2025-11-06@agenda-oracular
+DTSTART;VALUE=DATE:20251106
+DTEND;VALUE=DATE:20251107
+SUMMARY:CONTRATOS · Día recomendado (Predictivo)
+DESCRIPTION:Mercurio favorecido + numerología del día. Revisa cláusulas y firma con calma.\nColor:VERDE
+CATEGORIES:VERDE
+END:VEVENT
+BEGIN:VEVENT
+UID:contratos-2025-11-19@agenda-oracular
+DTSTART;VALUE=DATE:20251119
+DTEND;VALUE=DATE:20251120
+SUMMARY:CONTRATOS · Día recomendado (Predictivo)
+DESCRIPTION:Mercurio favorecido + numerología del día. Revisa cláusulas y firma con calma.\nColor:VERDE
+CATEGORIES:VERDE
+END:VEVENT
+BEGIN:VEVENT
+UID:contratos-2025-11-26@agenda-oracular
+DTSTART;VALUE=DATE:20251126
+DTEND;VALUE=DATE:20251127
+SUMMARY:CONTRATOS · Día recomendado (Predictivo)
+DESCRIPTION:Mercurio favorecido + numerología del día. Revisa cláusulas y firma con calma.\nColor:VERDE
+CATEGORIES:VERDE
+END:VEVENT
+BEGIN:VEVENT
+UID:contratos-2025-12-10@agenda-oracular
+DTSTART;VALUE=DATE:20251210
+DTEND;VALUE=DATE:20251211
+SUMMARY:CONTRATOS · Día recomendado (Predictivo)
+DESCRIPTION:Mercurio favorecido + numerología del día. Revisa cláusulas y firma con calma.\nColor:VERDE
+CATEGORIES:VERDE
+END:VEVENT
+BEGIN:VEVENT
+UID:contratos-2025-12-17@agenda-oracular
+DTSTART;VALUE=DATE:20251217
+DTEND;VALUE=DATE:20251218
+SUMMARY:CONTRATOS · Día recomendado (Predictivo)
+DESCRIPTION:Mercurio favorecido + numerología del día. Revisa cláusulas y firma con calma.\nColor:VERDE
+CATEGORIES:VERDE
+END:VEVENT
+BEGIN:VEVENT
+UID:contratos-2025-12-24@agenda-oracular
+DTSTART;VALUE=DATE:20251224
+DTEND;VALUE=DATE:20251225
+SUMMARY:CONTRATOS · Día recomendado (Predictivo)
+DESCRIPTION:Mercurio favorecido + numerología del día. Revisa cláusulas y firma con calma.\nColor:VERDE
+CATEGORIES:VERDE
+END:VEVENT
+END:VCALENDAR

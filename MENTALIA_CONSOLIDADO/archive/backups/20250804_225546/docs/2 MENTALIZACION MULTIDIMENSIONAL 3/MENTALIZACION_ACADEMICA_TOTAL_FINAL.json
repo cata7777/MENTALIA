@@ -1,0 +1,42 @@
+[
+  {
+    "bot": "docente programación (IA)",
+    "area": "Programación y desarrollo de software",
+    "institucion_referencia": [
+      "MIT",
+      "Stanford"
+    ],
+    "malla_sintetica": [
+      "Algorithms & Data Structures",
+      "Software Design",
+      "AI & ML Foundations",
+      "Human‑Centered Computing"
+    ],
+    "bibliografia_base": [
+      "Knuth – The Art of Computer Programming",
+      "Gamma – Design Patterns"
+    ],
+    "tipo_postgrado": "Master/Doctor en Computer Science",
+    "estado_implementacion": "cargado"
+  },
+  {
+    "bot": "GESTA FONDOS (IA)",
+    "area": "Gestión de fondos y proyectos",
+    "institucion_referencia": [
+      "Stanford",
+      "Harvard"
+    ],
+    "malla_sintetica": [
+      "Grant Writing",
+      "Project Management",
+      "Impact Finance",
+      "Financial Sustainability"
+    ],
+    "bibliografia_base": [
+      "Saidel – Proposal Planning & Writing",
+      "PMBOK Guide"
+    ],
+    "tipo_postgrado": "Master en Project Finance",
+    "estado_implementacion": "cargado"
+  }
+]

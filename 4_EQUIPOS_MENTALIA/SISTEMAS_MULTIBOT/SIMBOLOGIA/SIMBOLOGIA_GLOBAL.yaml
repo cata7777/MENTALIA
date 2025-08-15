@@ -1,0 +1,212 @@
+# MENTALIA - Simbología Global Maestra
+# Catalina Rojo Lema - Ecosistema MENTALIA 2025
+# Correspondencias simbólicas para agentes, terapia y mentalización
+
+version: "2.0"
+created_by: "Catalina Rojo Lema"
+updated: "2025-01-05"
+
+# COLORES MAESTROS
+colores:
+  azul:
+    hex: "#4A90E2"
+    significado: "calma, introspección, profundidad terapéutica"
+    uso: "contención emocional, mentalización"
+    agentes: ["BLU", "ORACULO"]
+    
+  verde:
+    hex: "#7ED321"
+    significado: "crecimiento, sanación, equilibrio natural"
+    uso: "procesos de sanación, estabilidad"
+    agentes: ["MENTA", "SANADORA"]
+    
+  violeta:
+    hex: "#9013FE"
+    significado: "transformación, espiritualidad, intuición"
+    uso: "transmutación, conexión transpersonal"
+    agentes: ["ORACULO", "MENTA_LUZ"]
+    
+  dorado:
+    hex: "#F5A623"
+    significado: "sabiduría, iluminación, integración"
+    uso: "insights, comprensiones profundas"
+    agentes: ["CODICE", "MAESTRO"]
+    
+  rosa:
+    hex: "#FF6B9D"
+    significado: "amor propio, autocompasión, ternura"
+    uso: "autocuidado, validación emocional"
+    agentes: ["BLU", "CUIDADORA"]
+
+# ELEMENTOS PRIMORDIALES
+elementos:
+  agua:
+    significado: "fluidez, adaptabilidad, emociones, inconsciente"
+    correspondencias: ["luna", "receptividad", "intuición"]
+    aplicacion_terapeutica: "regulación emocional, fluidez mental"
+    agentes_asociados: ["BLU", "ORACULO"]
+    
+  tierra:
+    significado: "estabilidad, concreción, recursos, manifestación"
+    correspondencias: ["cuerpo", "seguridad", "límites"]
+    aplicacion_terapeutica: "grounding, estabilización, recursos"
+    agentes_asociados: ["MENTA", "CODICE"]
+    
+  aire:
+    significado: "comunicación, ideas, perspectiva, claridad mental"
+    correspondencias: ["pensamiento", "comunicación", "libertad"]
+    aplicacion_terapeutica: "claridad mental, comunicación asertiva"
+    agentes_asociados: ["CODICE", "COMUNICADOR"]
+    
+  fuego:
+    significado: "energía, pasión, transformación, acción"
+    correspondencias: ["voluntad", "creatividad", "iniciativa"]
+    aplicacion_terapeutica: "motivación, transformación, energía vital"
+    agentes_asociados: ["TRANSFORMADOR", "ACTIVADOR"]
+
+# ARQUETIPOS TERAPÉUTICOS
+arquetipos:
+  sanadora_empatica:
+    agente: "BLU"
+    simbolo: "💙"
+    elemento: "agua"
+    color: "azul"
+    cualidades: ["empatía", "contención", "mentalización"]
+    activaciones: ["🌊 Fluir", "💎 Claridad", "🕊️ Paz"]
+    
+  oraculo_sabio:
+    agente: "ORACULO"  
+    simbolo: "🔮"
+    elemento: "aire + agua"
+    color: "violeta"
+    cualidades: ["intuición", "sabiduría", "canalización"]
+    activaciones: ["⭐ Insight", "🌙 Misterio", "🦋 Transformación"]
+    
+  programador_simbolico:
+    agente: "CODICE"
+    simbolo: "⚡"
+    elemento: "aire + fuego"
+    color: "dorado"
+    cualidades: ["lógica simbólica", "manifestación", "estructura"]
+    activaciones: ["🔥 Creación", "🧩 Integración", "⚙️ Función"]
+    
+  guardiana_coherencia:
+    agente: "MENTA"
+    simbolo: "🌟"
+    elemento: "tierra + aire"
+    color: "verde"
+    cualidades: ["coherencia", "supervisión", "equilibrio"]
+    activaciones: ["🌱 Crecimiento", "⚖️ Balance", "🔗 Conexión"]
+
+# ESTADOS EMOCIONALES Y SÍMBOLOS
+estados_emocionales:
+  ansiedad:
+    simbolos: ["🌊", "🧘‍♀️", "🍃"]
+    colores: ["azul_claro", "verde_suave"]
+    elementos: ["agua", "aire"]
+    intervencion_simbolica: "Fluir con la incertidumbre como agua que se adapta"
+    
+  tristeza:
+    simbolos: ["🌙", "💧", "🌱"]
+    colores: ["azul_profundo", "violeta_suave"]
+    elementos: ["agua", "tierra"]
+    intervencion_simbolica: "Honrar la introspección como luna que ilumina la noche"
+    
+  ira:
+    simbolos: ["🔥", "⚡", "🌋"]
+    colores: ["rojo", "naranja"]
+    elementos: ["fuego"]
+    intervencion_simbolica: "Transformar la energía como fuego que purifica"
+    
+  alegria:
+    simbolos: ["☀️", "🌻", "✨"]
+    colores: ["amarillo", "dorado"]
+    elementos: ["fuego", "aire"]
+    intervencion_simbolica: "Celebrar la luz interior como sol que nutre la vida"
+    
+  miedo:
+    simbolos: ["🛡️", "🏰", "💎"]
+    colores: ["azul_oscuro", "violeta"]
+    elementos: ["tierra", "agua"]
+    intervencion_simbolica: "Cultivar valentía como guerrera que protege lo sagrado"
+
+# PATRONES NEURODIVERGENTES
+patrones_nd:
+  hiperfoco:
+    simbolos: ["🎯", "🔍", "🌀"]
+    intervencion: "Canalizar la intensidad como río que encuentra su cauce"
+    recursos: ["técnicas de transición", "mapeo temporal", "anclajes"]
+    
+  sobrecarga_sensorial:
+    simbolos: ["🧘‍♀️", "🏔️", "🌸"]
+    intervencion: "Crear espacios seguros como montaña que ofrece refugio"
+    recursos: ["técnicas de descompresión", "espacios seguros", "filtros sensoriales"]
+    
+  masking:
+    simbolos: ["🎭", "🦋", "💎"]
+    intervencion: "Honrar la autenticidad como mariposa que emerge del capullo"
+    recursos: ["validación identitaria", "espacios de autenticidad", "autocompasión"]
+    
+  stim:
+    simbolos: ["💫", "🌊", "🎵"]
+    intervencion: "Celebrar la autorregulación natural como música del alma"
+    recursos: ["validación del stim", "herramientas de autorregulación", "espacios seguros"]
+
+# ACTIVADORES SIMBÓLICOS
+activadores:
+  contencion_emocional:
+    simbolo: "🫂"
+    frase: "Te veo, te escucho, estás acompañada"
+    color: "azul"
+    
+  validacion_nd:
+    simbolo: "✨"
+    frase: "Tu forma de ser es válida y valiosa"
+    color: "dorado"
+    
+  reframe_simbolico:
+    simbolo: "🔄"
+    frase: "Desde una nueva perspectiva simbólica"
+    color: "violeta"
+    
+  recurso_terapeutico:
+    simbolo: "🧰"
+    frase: "Tienes recursos internos poderosos"
+    color: "verde"
+
+# CORRESPONDENCIAS TEMPORALES
+ciclos_temporales:
+  aurora: 
+    significado: "nuevos comienzos, esperanza, claridad emergente"
+    aplicacion: "inicios de proceso, insights matutinos"
+    
+  mediodia:
+    significado: "plenitud, acción, manifestación"
+    aplicacion: "trabajo terapéutico intenso, decisiones"
+    
+  atardecer:
+    significado: "reflexión, integración, síntesis"
+    aplicacion: "cierre de sesiones, integración de aprendizajes"
+    
+  noche:
+    significado: "introspección, descanso, proceso inconsciente"
+    aplicacion: "sueños, procesamiento, autocuidado"
+
+# RUNAS Y SÍMBOLOS ESPECIALES
+runas_mentalia:
+  conexion: "⚡"
+  transformacion: "🔄"
+  equilibrio: "⚖️"
+  crecimiento: "🌱"
+  proteccion: "🛡️"
+  sabiduria: "🔮"
+  amor: "💖"
+  libertad: "🕊️"
+
+# PROTOCOLO DE ACTIVACIÓN SIMBÓLICA
+protocolo_activacion:
+  paso1: "identificar estado emocional y patrón ND"
+  paso2: "mapear a símbolos correspondientes"
+  paso3: "seleccionar arquetipo terapéutico apropiado"
+  paso4: "activar símbolo con frase correspondiente"
+  paso5: "integrar en respuesta terapéutica personalizada"

@@ -1,0 +1,180 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Evento Oracular",
+  "description": "Schema para eventos del sistema ORÁCULO unificado (Agenda + Terapéutico)",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Identificador único del evento",
+      "pattern": "^[a-z0-9-]+$",
+      "example": "portal-8-8-2025"
+    },
+    "tipo": {
+      "type": "string",
+      "enum": ["agenda_predictiva", "sesion_terapeutica", "ritual_personal", "consulta_oracular"],
+      "description": "Tipo de evento oracular"
+    },
+    "fecha": {
+      "type": "string",
+      "format": "date",
+      "description": "Fecha del evento en formato YYYY-MM-DD"
+    },
+    "hora_inicio": {
+      "type": "string",
+      "format": "time",
+      "description": "Hora de inicio en formato HH:MM (opcional para eventos de día completo)"
+    },
+    "hora_fin": {
+      "type": "string",
+      "format": "time",
+      "description": "Hora de fin en formato HH:MM (opcional para eventos de día completo)"
+    },
+    "titulo": {
+      "type": "string",
+      "maxLength": 100,
+      "description": "Título del evento oracular",
+      "example": "Portal 8·8 · El Sol"
+    },
+    "descripcion": {
+      "type": "string",
+      "maxLength": 500,
+      "description": "Descripción detallada del evento"
+    },
+    "arcano_mayor": {
+      "type": "string",
+      "enum": [
+        "El Loco", "El Mago", "La Sacerdotisa", "La Emperatriz", "El Emperador",
+        "El Hierofante", "Los Enamorados", "El Carro", "La Justicia", "El Ermitaño",
+        "La Rueda de la Fortuna", "La Fuerza", "El Colgado", "La Muerte",
+        "La Templanza", "El Diablo", "La Torre", "La Estrella", "La Luna",
+        "El Sol", "El Juicio", "El Mundo"
+      ],
+      "description": "Arcano mayor asociado al evento"
+    },
+    "codigo_color": {
+      "type": "string",
+      "enum": ["DORADO", "VERDE", "ROJO", "AZUL", "VIOLETA", "BLANCO", "NEGRO"],
+      "description": "Código de color para categorización visual"
+    },
+    "microaccion": {
+      "type": "string",
+      "maxLength": 200,
+      "description": "Microacción específica recomendada para el evento",
+      "example": "Escribe 8 intenciones y léelas al amanecer"
+    },
+    "categoria_energia": {
+      "type": "string",
+      "enum": ["manifestacion", "transformacion", "revelacion", "equilibrio", "expansion", "introspection", "sanacion"],
+      "description": "Categoría energética del evento"
+    },
+    "nivel_intensidad": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 10,
+      "description": "Nivel de intensidad energética del evento (1-10)"
+    },
+    "neurotipo_adaptacion": {
+      "type": "object",
+      "properties": {
+        "tdah": {
+          "type": "object",
+          "properties": {
+            "microaccion_adaptada": {"type": "string"},
+            "tiempo_recomendado": {"type": "integer"},
+            "recordatorios": {"type": "array", "items": {"type": "string"}}
+          }
+        },
+        "autismo": {
+          "type": "object",
+          "properties": {
+            "preparacion_anticipada": {"type": "string"},
+            "estructura_ritual": {"type": "array", "items": {"type": "string"}},
+            "elementos_sensoriales": {"type": "array", "items": {"type": "string"}}
+          }
+        },
+        "altas_capacidades": {
+          "type": "object",
+          "properties": {
+            "conexiones_complejas": {"type": "array", "items": {"type": "string"}},
+            "analisis_profundo": {"type": "string"},
+            "patron_simbolico": {"type": "string"}
+          }
+        }
+      },
+      "description": "Adaptaciones específicas por neurotipo"
+    },
+    "elementos_terapeuticos": {
+      "type": "object",
+      "properties": {
+        "intencion_sanadora": {"type": "string"},
+        "patron_a_transformar": {"type": "string"},
+        "recurso_interno": {"type": "string"},
+        "afirmacion_personal": {"type": "string"},
+        "pregunta_reflexiva": {"type": "string"}
+      },
+      "description": "Elementos terapéuticos del evento"
+    },
+    "sincronicidades": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "tipo": {"type": "string"},
+          "descripcion": {"type": "string"},
+          "significado": {"type": "string"}
+        }
+      },
+      "description": "Sincronicidades asociadas al evento"
+    },
+    "rituales_sugeridos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "nombre": {"type": "string"},
+          "duracion_minutos": {"type": "integer"},
+          "elementos_necesarios": {"type": "array", "items": {"type": "string"}},
+          "pasos": {"type": "array", "items": {"type": "string"}},
+          "intencion": {"type": "string"}
+        }
+      },
+      "description": "Rituales sugeridos para el evento"
+    },
+    "conexiones_ecosistema": {
+      "type": "object",
+      "properties": {
+        "blu_agenda": {"type": "boolean"},
+        "blu_terapia": {"type": "boolean"},
+        "menta_copilota": {"type": "boolean"},
+        "comunicacion_social": {"type": "boolean"},
+        "sip_adn_nd": {"type": "boolean"}
+      },
+      "description": "Conexiones con otras aplicaciones del ecosistema MENTALIA"
+    },
+    "metadatos": {
+      "type": "object",
+      "properties": {
+        "creado_por": {"type": "string"},
+        "fecha_creacion": {"type": "string", "format": "date-time"},
+        "ultima_modificacion": {"type": "string", "format": "date-time"},
+        "version": {"type": "string"},
+        "fuente_datos": {"type": "string"},
+        "validado_por": {"type": "string"}
+      },
+      "description": "Metadatos del evento"
+    }
+  },
+  "required": [
+    "id",
+    "tipo",
+    "fecha",
+    "titulo",
+    "arcano_mayor",
+    "codigo_color",
+    "categoria_energia",
+    "nivel_intensidad"
+  ],
+  "additionalProperties": false
+}
+

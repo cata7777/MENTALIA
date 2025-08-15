@@ -1,0 +1,71 @@
+
+# MODELO DE CONVENIO MUNICIPAL · IMPLEMENTACIÓN FAI
+
+---
+
+## I. PARTES
+
+Este convenio se celebra entre:
+
+- La entidad desarrolladora “EnHiperfoco SpA”, representante del ecosistema RSII.
+- La Ilustre Municipalidad de [Nombre de la comuna], representada por su Alcalde/Alcaldesa [Nombre].
+
+---
+
+## II. OBJETO DEL CONVENIO
+
+Implementar el sistema “FAI · Formación Académica Inteligente” en la comuna de [Nombre], garantizando acceso educativo gratuito para personas con Ficha de Protección Social.
+
+---
+
+## III. COMPROMISOS DE LAS PARTES
+
+### EnHiperfoco SpA:
+1. Entrega técnica del módulo FAI completo (clases, Blu IA, evaluación adaptativa).
+2. Acceso gratuito para usuarios derivados por la municipalidad.
+3. Hosting, actualizaciones y soporte básico.
+4. Reporte técnico semestral de uso.
+
+### Municipalidad:
+1. Difusión del acceso gratuito en canales oficiales.
+2. Entrega de listado de beneficiarios (si aplica).
+3. Firma de declaración ética de no comercialización.
+4. Envío de contacto institucional para vinculación con usuarios.
+
+---
+
+## IV. CLÁUSULA SOCIAL
+
+FAI operará con acceso gratuito para:
+
+- Personas con Ficha Social dentro del 60% de mayor vulnerabilidad.
+- Mujeres jefas de hogar en programas de capacitación.
+- Jóvenes que abandonaron la educación formal y desean reinsertarse.
+
+---
+
+## V. DURACIÓN
+
+Este convenio tendrá una vigencia inicial de 12 meses, renovable automáticamente salvo aviso contrario.
+
+---
+
+## VI. CONFIDENCIALIDAD Y ÉTICA
+
+Ambas partes se comprometen a:
+- No vender ni explotar los contenidos de FAI.
+- Garantizar un uso educativo, formativo y no discriminatorio.
+- Proteger la identidad emocional y social de los usuarios ND.
+
+---
+
+## VII. FIRMAS
+
+[Firma Alcalde/Alcaldesa]
+[Firma representante EnHiperfoco SpA]
+
+---
+
+📧 contacto@enhiperfoco.cl
+📍 Santiago – Chile
+
