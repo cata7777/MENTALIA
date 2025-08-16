@@ -12,6 +12,7 @@ Esta carpeta contiene la documentación técnica completa y organizada del ecosi
 | **[🏥 APLICACIONES_README.md](./APLICACIONES_README.md)** | 7 Aplicaciones enterprise | Product Managers, Clientes |
 | **[🔮 ORACULO_README.md](./ORACULO_README.md)** | Sistema coordinación central | Arquitectos, DevOps |
 | **[⚖️ LEGAL_README.md](./LEGAL_README.md)** | Integración ChileCompra/MINSAL | Legal, Compliance |
+| **[🐳 DEVOPS_README.md](./DEVOPS_README.md)** | Infraestructura y deployment | DevOps, Arquitectos |
 
 ### 🎭 Por Audiencia
 
@@ -45,6 +46,10 @@ Esta carpeta contiene la documentación técnica completa y organizada del ecosi
 - **[Agentes Empresariales](./AGENTES_README.md#💼-categoría-4-empresarial-20-agentes)** - 20 agentes de negocio
 - **[ROI](../README.md#📊-métricas-de-impacto)** - Retorno de inversión
 
+#### 🛠️ **Para DevOps**
+- **[Infraestructura](./DEVOPS_README.md)** - Docker, scripts y CI/CD
+- **[Monitoring](#)** - Observabilidad *(próximamente)*
+
 ## 🔄 Estado de Documentación
 
 ### ✅ **Completado**
@@ -53,9 +58,9 @@ Esta carpeta contiene la documentación técnica completa y organizada del ecosi
 - ✅ Aplicaciones - 7 apps enterprise documentadas
 - ✅ Sistema Oráculo - Coordinación central
 - ✅ Integración Legal - ChileCompra + MINSAL
+- ✅ DevOps - Infraestructura y deployment
 
 ### 🔄 **En Desarrollo**
-- 🔄 DevOps README - Infraestructura y deployment
 - 🔄 APIs Documentation - Documentación técnica APIs
 - 🔄 Security README - Seguridad y compliance
 - 🔄 Monitoring README - Observabilidad y métricas
@@ -97,11 +102,10 @@ grep -n "concepto" ./docs/AGENTES_README.md
 - **Sistema Oráculo:** 100% completo
 - **Integración Legal:** 100% completa
 - **APIs:** 60% documentadas
-- **DevOps:** 40% documentado
+- **DevOps:** 100% documentado
 
 ### 🎯 **Objetivos Próximos 30 días**
 - [ ] Completar documentación APIs (100%)
-- [ ] Finalizar guía DevOps (100%)
 - [ ] Añadir troubleshooting guide
 - [ ] Crear video tutoriales básicos
 
