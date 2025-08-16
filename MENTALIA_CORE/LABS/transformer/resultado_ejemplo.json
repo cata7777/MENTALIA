@@ -1,0 +1,63 @@
+{
+  "timestamp": "2025-08-05T11:59:10.473857",
+  "emotional_analysis": {
+    "primary_emotions": [
+      "apatía",
+      "confusión"
+    ],
+    "emotional_intensity": 0.8,
+    "emotional_balance": "regulado",
+    "emotional_context": "procesamiento"
+  },
+  "nd_patterns": {
+    "detected_patterns": [
+      "hiperfoco",
+      "sobrecarga_sensorial"
+    ],
+    "nd_intensity": 0.2,
+    "adaptive_strategies_needed": [
+      "técnicas de transición suave",
+      "temporizadores visuales",
+      "espacios de descompresión"
+    ],
+    "nd_strengths": [
+      "persistencia"
+    ]
+  },
+  "symbolic_mapping": {
+    "active_symbols": [
+      "🌪️ (encontrar el centro de la calma)",
+      "🧭 (orientación interior)",
+      "🎯 (canalizar la intensidad)",
+      "🧘‍♀️ (crear espacios seguros)"
+    ],
+    "resource_symbols": [
+      "🏺 (contención emocional)",
+      "🛡️ (protección y límites)"
+    ],
+    "primary_archetype": "Guía Sabia",
+    "therapeutic_activation": "Activando resonancia con: 🌪️ (encontrar el centro de la calma), 🧭 (orientación interior)",
+    "symbol_narrative": "La Guía Sabia ilumina el camino para comprenderte mejor."
+  },
+  "therapeutic_response": {
+    "containment": "Estoy aquí, en este espacio compartido, acompañándote en tu proceso.",
+    "validation": "Tu sistema nervioso tiene sabiduría propia, está tratando de protegerte.",
+    "reframe": "Desde lo simbólico: La Guía Sabia ilumina el camino para comprenderte mejor. Activando resonancia con: 🌪️ (encontrar el centro de la calma), 🧭 (orientación interior)",
+    "resource": "Recurso: Técnica 5-4-3-2-1 para anclaje sensorial consciente.",
+    "strength_affirmation": "Tu neurodivergencia te da el don de persistencia, una fortaleza única."
+  },
+  "feedback_loops": {
+    "status": "activated",
+    "loops": [
+      "emotional_regulation",
+      "sensory_calibration",
+      "symbol_integration"
+    ],
+    "adaptation_score": 0.75
+  },
+  "therapeutic_trajectory": {
+    "status": "iniciando",
+    "phase": "exploración"
+  },
+  "mentalization_score": 1.0
+}

@@ -26,6 +26,14 @@ pip install -r requirements.txt
 uvicorn api.main:app --reload --port 8000
 ```
 
+### ☁️ Deploy en RunPod
+```bash
+git clone https://github.com/cata7777/MENTALIA.git
+cd MENTALIA/RUNPOD_DEPLOY
+./start_mentalia_runpod.sh
+```
+Más detalles en [RUNPOD_DEPLOY/README.md](RUNPOD_DEPLOY/README.md).
+
 ## 📊 Acceso a Servicios
 
 - **🤖 API Docs:** [localhost:8000/docs](http://localhost:8000/docs)
